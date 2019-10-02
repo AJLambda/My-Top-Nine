@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  border-bottom: 3px solid white;
 
   @media (max-width: $mobile) {
     height: 500px;
@@ -31,6 +32,7 @@
 
   .cta-btn1 {
     padding: 20px 50px;
+    width: 15;
     background: $black;
     opacity: 0.9;
     color: $white;

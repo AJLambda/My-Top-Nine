@@ -34,8 +34,10 @@ a:active {
 }
 
 .container {
+  width: 80%;
   max-width: 1680px;
   margin: 0 auto;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.8);
 
   @media (max-width: $mobile) {
     width: 100%;
@@ -46,6 +48,10 @@ a:active {
 //Page fade in
 body {
   transition: all 0.7s linear;
+  // background: rgba(0, 0, 0, 0.4);
+  background-image: url("../images/background3.jpg");
+  background-size: contain;
+  // background-repeat: no-repeat;
 }
 .loading {
   opacity: 0;
