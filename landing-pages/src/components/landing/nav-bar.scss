@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  position: fixed;
+  // position: fixed;
   top: 0;
   z-index: 300;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
@@ -19,7 +19,8 @@
 
   .logo {
     font-family: "Nunito", sans-serif;
-    font-size: 4rem;
+    font-weight: bold;
+    font-size: 3rem;
     color: $white;
 
     sup {
@@ -36,7 +37,12 @@
       text-align: center;
     }
   }
-
+  .home-link {
+    font-size: 18px;
+  }
+  .about-link {
+    font-size: 18px;
+  }
   .nav-btns {
     width: 100%;
     margin: 0 20px 0 0;
