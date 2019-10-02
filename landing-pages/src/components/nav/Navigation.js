@@ -87,22 +87,51 @@ export default function Navigation() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link className="home-link" href="#home">
+            {/* <Nav.Link className="home-link" href="#home">
               Home
             </Nav.Link>
             <Nav.Link className="about-link" href="#about">
               About
-            </Nav.Link>
+            </Nav.Link> */}
+            <Tabs
+              // variant="fullWidth"
+              value={value}
+              onChange={handleChange}
+              aria-label="nav tabs example"
+            >
+              <LinkTab
+                label="Home "
+                href="/drafts"
+                style={{ fontSize: "18px" }}
+                {...a11yProps(0)}
+              />
+              <LinkTab
+                label="About"
+                href="/trash"
+                style={{ fontSize: "18px" }}
+                {...a11yProps(1)}
+              />
+              {/* <LinkTab label="Page Three" href="/spam" {...a11yProps(2)} /> */}
+            </Tabs>
+            {/* <TabPanel value={value} index={0}>
+              Page One
+            </TabPanel>
+            <TabPanel value={value} index={1}>
+              Page Two
+            </TabPanel>
+            <TabPanel value={value} index={2}>
+              Page Three
+            </TabPanel> */}
           </Nav>
           <Nav>
             <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
+            {/* <Nav.Link eventKey={2} href="#memes">
               Dank memes
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <div className={classes.root}>
+      {/* <div className={classes.root}>
         <AppBar position="static">
           <Tabs
             // variant="fullWidth"
@@ -111,11 +140,11 @@ export default function Navigation() {
             aria-label="nav tabs example"
           >
             <LinkTab label="Page One" href="/drafts" {...a11yProps(0)} />
-            <LinkTab label="Page Two" href="/trash" {...a11yProps(1)} />
-            <LinkTab label="Page Three" href="/spam" {...a11yProps(2)} />
-          </Tabs>
-        </AppBar>
-        <TabPanel value={value} index={0}>
+            <LinkTab label="Page Two" href="/trash" {...a11yProps(1)} /> */}
+      {/* <LinkTab label="Page Three" href="/spam" {...a11yProps(2)} /> */}
+      {/* </Tabs>
+        </AppBar> */}
+      {/* <TabPanel value={value} index={0}>
           Page One
         </TabPanel>
         <TabPanel value={value} index={1}>
@@ -123,8 +152,8 @@ export default function Navigation() {
         </TabPanel>
         <TabPanel value={value} index={2}>
           Page Three
-        </TabPanel>
-      </div>
+        </TabPanel> */}
+      {/* </div> */}
     </>
   );
 }
