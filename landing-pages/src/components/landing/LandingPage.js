@@ -2,17 +2,13 @@ import React from "react";
 import FilmsImg from "../images/films.png";
 import MusicImg from "../images/music.png";
 import SportsImg from "../images/sports.png";
-import Footer from "../footer/Footer";
-import Navigation from "../nav/Navigation";
-
 import "../landing/landing.scss";
 
 class LandingPage extends React.Component {
   render() {
     return (
       <>
-        <Navigation />
-        <div class="container">
+        <div className="container">
           {/* CTA */}
           <section className="cta">
             <div className="cta-box">
@@ -47,7 +43,7 @@ class LandingPage extends React.Component {
         </section> */}
 
           {/* Middle Content */}
-          <section class="middle-content">
+          <section className="middle-content">
             <section className="content-section1">
               <div className="img-content">
                 <img src={FilmsImg} alt="Guy playing guitar and singing"></img>
@@ -58,28 +54,28 @@ class LandingPage extends React.Component {
               </div>
             </section>
 
-            <section class="content-section2">
-              <div class="text-content">
+            <section className="content-section2">
+              <div className="text-content">
                 <h3>Music</h3>
                 <p>Display your favorite music!</p>
               </div>
-              <div class="img-content">
+              <div className="img-content">
                 <img src={MusicImg} alt="Inside of movie theater"></img>
               </div>
             </section>
 
-            <section class="content-section3">
-              <div class="img-content">
+            <section className="content-section3">
+              <div className="img-content">
                 <img src={SportsImg} alt="guy surfing"></img>
               </div>
-              <div class="text-content">
+              <div className="text-content">
                 <h3>Sports</h3>
                 <p>Display your favorite sports!</p>
               </div>
             </section>
 
-            <div class="bottom-btn">
-              <button class="bottom-btn1">
+            <div className="bottom-btn">
+              <button className="bottom-btn1">
                 <a
                   href="https://my-top-nine-logan.netlify.com/"
                   target="_blank"
@@ -103,7 +99,6 @@ class LandingPage extends React.Component {
 
           {/* Footer */}
         </div>
-        <Footer />
       </>
     );
   }
