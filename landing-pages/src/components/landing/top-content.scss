@@ -1,5 +1,5 @@
 .top-content {
-  background-color: whitesmoke;
+  background-color: white;
   // background-image: linear-gradient(rgb(37, 38, 39), rgb(233, 236, 239));
   // background-image: url("../images/middleimg.jpg");
   display: grid;
@@ -8,7 +8,7 @@
   // justify-content: space-between;
   align-items: center;
   height: 300px;
-  box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 3px 0px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
 
