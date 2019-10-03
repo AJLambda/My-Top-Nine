@@ -34,9 +34,11 @@ a:active {
 }
 
 .container {
+  // margin-top: -100px;
   width: 80%;
   max-width: 1680px;
   margin: 0 auto;
+  padding: 0;
   box-shadow: 0 3px 7px 3px rgba(0, 0, 0, 0.6);
 
   @media (max-width: $mobile) {

@@ -1,10 +1,20 @@
 .top-content {
-  background-color: $gray;
-  background-image: linear-gradient(rgb(37, 38, 39), rgb(233, 236, 239));
-  padding: 60px 0;
+  background-color: whitesmoke;
+  // background-image: linear-gradient(rgb(37, 38, 39), rgb(233, 236, 239));
+  // background-image: url("../images/middleimg.jpg");
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  // flex-direction: row;
+  // justify-content: space-between;
+  align-items: center;
+  height: 300px;
+
+  // .content-box {
+  //   width: 25%;
+  // }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: $red;
     text-align: center;
     font-weight: normal;
@@ -13,5 +23,21 @@
       font-size: 2rem;
       font-weight: bolder;
     }
+  }
+
+  .top-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .top-title {
+    font-size: 25px;
+    margin: 10px 0 10px 0;
+  }
+
+  .top-text {
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 10px;
   }
 }

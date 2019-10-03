@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    // <Router>
     <div className="App">
       <Navigation />
 
@@ -17,7 +16,6 @@ function App() {
       <Route exact path="/" render={props => <LandingPage {...props} />} />
       <Route exact path="/about" render={props => <AboutPage {...props} />} />
     </div>
-    // </Router>
   );
 }
 

@@ -2,6 +2,10 @@ import React from "react";
 import FilmsImg from "../images/films.png";
 import MusicImg from "../images/music.png";
 import SportsImg from "../images/sports.png";
+import CreateImg from "../images/user.png";
+import SearchImg from "../images/user1.png";
+import AddImg from "../images/user2.png";
+import ShareImg from "../images/user3.png";
 import "../landing/landing.scss";
 
 class LandingPage extends React.Component {
@@ -36,11 +40,36 @@ class LandingPage extends React.Component {
         </section> */}
 
           {/* Top Content */}
-          {/* <section class="top-content">
-          <div class="transition-line">
-            <h2>Choose your top nine in a variety of categories</h2>
-          </div>
-        </section> */}
+          <section className="top-content">
+            <div className="content-box">
+              <img className="top-img" src={CreateImg} alt=""></img>
+              <div className="top-title">Create</div>
+              <div className="top-text">
+                Create a profile and you will be given your own wall
+              </div>
+            </div>
+            <div className="content-box">
+              <img className="top-img" src={SearchImg} alt=""></img>
+              <div className="top-title">Search</div>
+              <div className="top-text">
+                Search for your favorite things in a variety of categories
+              </div>
+            </div>
+            <div className="content-box">
+              <img className="top-img" src={AddImg} alt=""></img>
+              <div className="top-title">Add</div>
+              <div className="top-text">
+                Add your favorite selection to your top nine
+              </div>
+            </div>
+            <div className="content-box">
+              <img className="top-img" src={ShareImg} alt=""></img>
+              <div className="top-title">Share</div>
+              <div className="top-text">
+                Share your Top Nine with your friends and compare
+              </div>
+            </div>
+          </section>
 
           {/* Middle Content */}
           <section className="middle-content">
