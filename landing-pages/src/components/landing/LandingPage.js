@@ -2,10 +2,10 @@ import React from "react";
 import FilmsImg from "../images/films.png";
 import MusicImg from "../images/music.png";
 import SportsImg from "../images/sports.png";
-import CreateImg from "../images/user.png";
-import SearchImg from "../images/user1.png";
-import AddImg from "../images/user2.png";
-import ShareImg from "../images/user3.png";
+import CreateImg from "../images/user12.png";
+import SearchImg from "../images/user5.png";
+import AddImg from "../images/user1.png";
+import ShareImg from "../images/user6.png";
 import "../landing/landing.scss";
 
 class LandingPage extends React.Component {

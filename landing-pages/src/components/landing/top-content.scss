@@ -8,6 +8,9 @@
   // justify-content: space-between;
   align-items: center;
   height: 300px;
+  box-shadow: 0 5px 3px -3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
 
   // .content-box {
   //   width: 25%;
@@ -31,11 +34,13 @@
   }
 
   .top-title {
+    // color: $red;
     font-size: 25px;
-    margin: 10px 0 10px 0;
+    margin: 15px 0 15px 0;
   }
 
   .top-text {
+    color: grey;
     font-size: 14px;
     font-weight: lighter;
     padding: 10px;
