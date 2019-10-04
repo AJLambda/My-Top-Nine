@@ -1,4 +1,5 @@
 import React from "react";
+
 import MusicImg from "../images/musicwall.jpg";
 import FilmsImg from "../images/filmswall2.jpg";
 import VilliansImg from "../images/villainswall.jpg";
@@ -28,14 +29,14 @@ class LandingPage extends React.Component {
           {/* CTA */}
           <section className="cta">
             <div className="cta-box">
-              <h1 id="ctaHeading">Share your top 9 with the world.</h1>
-              <div className="cta-btn">
+              {/* <h1 id="ctaHeading">Share your top 9 with the world.</h1> */}
+              {/* <div className="cta-btn">
                 <button className="cta-btn1">
                   <a href="https://my-top-nine-logan.netlify.com/">
                     <span>Join us</span>
                   </a>
                 </button>
-              </div>
+              </div> */}
               <div className="cta-btn-mobile">
                 <button className="cta-btn2">
                   <a href="https://my-top-nine-logan.netlify.com/">
@@ -60,7 +61,7 @@ class LandingPage extends React.Component {
             </div>
 
             <Carousel
-              // autoPlay
+              autoPlay
               // dynamicHeight={true}
               infiniteLoop
               showArrows={false}

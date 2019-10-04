@@ -1,5 +1,7 @@
 .top-content {
   background-color: white;
+  padding-right: 5%;
+  padding-left: 5%;
   // background-image: linear-gradient(rgb(37, 38, 39), rgb(233, 236, 239));
   // background-image: url("../images/middleimg.jpg");
   display: grid;
@@ -7,7 +9,7 @@
   // flex-direction: row;
   // justify-content: space-between;
   align-items: center;
-  height: 300px;
+  height: 250px;
   box-shadow: 0 5px 3px 0px rgba(0, 0, 0, 0.2);
 
   position: relative;
@@ -44,6 +46,6 @@
     color: grey;
     font-size: 14px;
     font-weight: lighter;
-    padding: 10px;
+    padding: 10px 8% 10px 8%;
   }
 }
