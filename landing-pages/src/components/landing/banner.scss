@@ -18,12 +18,17 @@
       font-size: 30px;
     }
 
+    // br {
+    //   line-height: 2.6rem;
+    // }
+
     .banner-text {
       // text-align: center;
       color: grey;
       font-size: 15px;
-      line-height: 2rem;
-      padding: 20px 20% 10px 20%;
+      line-height: 2.6rem;
+      padding-top: 20px;
+      // padding: 20px 20% 10px 20%;
 
       span {
         color: $red;

@@ -30,7 +30,7 @@ class LandingPage extends React.Component {
           <section className="cta">
             <div className="cta-box">
               <h1 id="ctaHeading">
-                Share your <span>top nine</span> with your friends
+                Share your <span>top nine</span> with friends
               </h1>
               {/* <div className="cta-btn">
                 <button className="cta-btn1">
@@ -54,11 +54,12 @@ class LandingPage extends React.Component {
             <div className="banner-info">
               <div className="banner-title">What is My Top Nine?</div>
               <div className="banner-text">
-                Do you remember Myspace Top 8? If you do, our site will be a
-                nice bit of social nostalgia. If not, well then welcome to a
-                world where friends shared more than just their food choices for
-                the day. My Top Nine is about sharing what you love most across
-                <span> nine different categories</span>.{" "}
+                Do you remember Myspace Top 8? If so, our site will be a nice
+                bit of social nostalgia. <br />
+                If not, well welcome to a world where friends shared more than
+                their food choices for the day. <br /> My Top Nine is about
+                sharing what you love most across
+                <span> nine different categories:</span>{" "}
               </div>
             </div>
 
@@ -122,7 +123,7 @@ class LandingPage extends React.Component {
               <img className="top-img" src={SearchImg} alt=""></img>
               <div className="top-title">Choose</div>
               <div className="top-text">
-                Choose your favorite selections in a variety of categories
+                Choose your favorite selections from each category
               </div>
             </div>
             <div className="content-box">
