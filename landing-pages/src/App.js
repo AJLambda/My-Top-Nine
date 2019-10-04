@@ -4,7 +4,7 @@ import "./App.css";
 import LandingPage from "./components/landing/LandingPage";
 import AboutPage from "./components/about/AboutPage";
 import Navigation from "./components/nav/Navigation";
-import Footer from "./components/footer/Footer";
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
     <div className="App">
       <Navigation />
 
-      <Footer />
       <Route exact path="/" render={props => <LandingPage {...props} />} />
       <Route exact path="/about" render={props => <AboutPage {...props} />} />
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../footer/Footer";
 
 import MusicImg from "../images/musicwall.jpg";
 import FilmsImg from "../images/filmswall2.jpg";
@@ -8,6 +9,7 @@ import VideoGameImg from "../images/videogamewall.jpg";
 import HerosImg from "../images/heroswall.jpg";
 import MoviesImg from "../images/movieswall.jpg";
 import TvImg from "../images/tvwall.jpg";
+import FoodsImg from "../images/foodswall.jpeg";
 import SportsImg from "../images/sportswall.jpg";
 import SportsIcon from "../images/sportsicon.png";
 import MusicIcon from "../images/musicicon.png";
@@ -30,7 +32,7 @@ class LandingPage extends React.Component {
           <section className="cta">
             <div className="cta-box">
               <h1 id="ctaHeading">
-                Share your <span>top nine</span> with friends
+                Share your <span>top nine</span> with friends.
               </h1>
               {/* <div className="cta-btn">
                 <button className="cta-btn1">
@@ -206,6 +208,21 @@ class LandingPage extends React.Component {
               <div className="card">
                 <img
                   className="card-img-top"
+                  src={FoodsImg}
+                  alt="Card image cap"
+                />
+                <div className="card-body">
+                  <h3 className="card-title">Foods</h3>
+                  <p className="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+              <div className="card">
+                <img
+                  className="card-img-top"
                   src={DestinationImg}
                   alt="Card image cap"
                 />
@@ -289,6 +306,7 @@ class LandingPage extends React.Component {
         </section> */}
 
           {/* Footer */}
+          <Footer />
         </div>
       </>
     );
