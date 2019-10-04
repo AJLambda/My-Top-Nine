@@ -1,23 +1,37 @@
 .middle-content {
-  background-image: url("../images/white-waves.png");
+  background-image: url("../images/brickwall.png");
   // background-color: gainsboro;
   // background-size: 100% 100%;
   // background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  padding: 60px 6%;
+  padding: 30px 5%;
   border-top: 2px solid $light-gray;
   border-bottom: 2px solid $black;
 
-  .banner-categories {
-    padding: 30px;
-    background-image: url("../images/white-waves.png");
-    .banner-img {
-      width: 90px;
-      height: 90px;
-    }
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+    column-gap: 5%;
+    row-gap: 20px;
   }
 
+  .card {
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+    height: 300px;
+
+    .card-text {
+      font-size: 13px;
+      color: gray;
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: 160px;
+      box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
   .text-content {
     width: 48%;
     border-radius: 3px;

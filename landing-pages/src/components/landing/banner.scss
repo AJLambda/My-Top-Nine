@@ -1,5 +1,5 @@
 .banner {
-  background: whitesmoke;
+  background: url(../images/white-waves.png);
   // height: 400px;
   display: flex;
   flex-direction: column;
@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     height: 200px;
     position: relative;
     z-index: 1;
@@ -18,10 +19,11 @@
     }
 
     .banner-text {
+      // text-align: center;
       color: grey;
       font-size: 15px;
       line-height: 2rem;
-      padding: 20px 15% 10px 15%;
+      padding: 20px 20% 10px 20%;
 
       span {
         color: $red;
@@ -60,13 +62,13 @@
 // Carousel
 
 .banner-carousel {
-  margin: 0px auto 40px auto;
-  background: whitesmoke;
+  margin: 0px auto 50px auto;
+  // background: whitesmoke;
   overflow: visible;
   // padding: 30px !important;
 
   .slideimg-container {
-    background: whitesmoke;
+    // background: white;
     padding-bottom: 30px;
   }
 
@@ -88,8 +90,15 @@
   }
 
   li.slide {
-    background: whitesmoke;
+    // background: whitesmoke;
   }
+}
+li {
+  background-color: transparent;
+}
+
+.slide {
+  background: transparent !important;
 }
 
 ul.control-dots {
@@ -108,5 +117,5 @@ li.slide.selected {
 }
 
 .slider-wrapper {
-  padding-top: 50px;
+  padding-top: 20px;
 }
