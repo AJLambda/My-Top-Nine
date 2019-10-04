@@ -1,7 +1,7 @@
 .cta {
   background-image: url("../images/VirtualComm1.png");
   // width: 100%;
-  height: 92vh;
+  height: 99vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -17,14 +17,17 @@
   h1 {
     color: $black;
     // font-weight: bold;
-    font-size: 4rem;
+    font-size: 2.8rem;
     position: absolute;
     text-align: center;
-    text-shadow: 2px 2px 3px;
-    top: 35%;
-    left: 51%;
+    // text-shadow: 2px 2px 3px;
+    top: 20%;
+    left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
+    span {
+      color: $red;
+    }
     @media (max-width: $mobile) {
       font-size: 3rem;
       white-space: nowrap;

@@ -29,7 +29,9 @@ class LandingPage extends React.Component {
           {/* CTA */}
           <section className="cta">
             <div className="cta-box">
-              {/* <h1 id="ctaHeading">Share your top 9 with the world.</h1> */}
+              <h1 id="ctaHeading">
+                Share your <span>top nine</span> with your friends
+              </h1>
               {/* <div className="cta-btn">
                 <button className="cta-btn1">
                   <a href="https://my-top-nine-logan.netlify.com/">
