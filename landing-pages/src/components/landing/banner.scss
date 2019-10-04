@@ -1,9 +1,43 @@
 .banner {
   background: whitesmoke;
-  height: 300px;
+  // height: 400px;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
 
-  .banner-title {
-    font-size: 30px;
+  .banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+
+    .banner-title {
+      font-size: 30px;
+    }
+
+    .banner-text {
+      color: grey;
+      font-size: 15px;
+      line-height: 2rem;
+      padding: 20px 15% 10px 15%;
+
+      span {
+        color: $red;
+      }
+    }
+  }
+
+  .banner-categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    // background-image: url("../images/white-waves.png");
+    .banner-img {
+      width: 90px;
+      height: 90px;
+    }
   }
 
   @media (max-width: $mobile) {
@@ -21,4 +55,58 @@
       font-size: 3rem;
     }
   }
+}
+
+// Carousel
+
+.banner-carousel {
+  margin: 0px auto 40px auto;
+  background: whitesmoke;
+  overflow: visible;
+  // padding: 30px !important;
+
+  .slideimg-container {
+    background: whitesmoke;
+    padding-bottom: 30px;
+  }
+
+  // .slideimg {
+  //   height: 150px;
+  //   width: 150px;
+  // }
+
+  .slide {
+    // &:hover {
+    //   cursor: pointer;
+    // }
+    margin-bottom: 40px !important;
+    style {
+      min-width: 50%;
+    }
+    height: 160px;
+    width: 160px;
+  }
+
+  li.slide {
+    background: whitesmoke;
+  }
+}
+
+ul.control-dots {
+  margin-top: 30px !important;
+  // margin-left: 20px !important;
+}
+
+li.slide.selected {
+  margin-top: -20px !important;
+  // transition: width 2s, height 4s;
+  // min-width: 36% !important;
+
+  // height: 300px !important;
+  // min-width: 35% !important;
+  // height: 20px;
+}
+
+.slider-wrapper {
+  padding-top: 50px;
 }

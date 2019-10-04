@@ -9,6 +9,15 @@
   border-top: 2px solid $light-gray;
   border-bottom: 2px solid $black;
 
+  .banner-categories {
+    padding: 30px;
+    background-image: url("../images/white-waves.png");
+    .banner-img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
   .text-content {
     width: 48%;
     border-radius: 3px;

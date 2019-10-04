@@ -2,6 +2,7 @@ import React from "react";
 import FilmsImg from "../images/films.png";
 import MusicImg from "../images/music.png";
 import SportsImg from "../images/sports.png";
+import SportsIcon from "../images/sportsicon.png";
 import MusicIcon from "../images/musicicon.png";
 import CreateImg from "../images/user12.png";
 import SearchImg from "../images/user5.png";
@@ -10,6 +11,8 @@ import ShareImg from "../images/user6.png";
 import Card from "react-bootstrap/Card";
 import CardColumns from "react-bootstrap/Card";
 import "../landing/landing.scss";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 class LandingPage extends React.Component {
   render() {
@@ -38,15 +41,63 @@ class LandingPage extends React.Component {
           </section>
 
           {/* Banner */}
-          <section class="banner">
-            <div className="banner-title">What is My Top Nine?</div>
-            <div className="banner-text">
-              Do you remember Myspace Top 8? If you do, our site will be a nice
-              bit of social nostalgia. If not, well then welcome to a world
-              where friends shared more than just their food choices for the
-              day. My Top Nine is about sharing what you love most across nine
-              different categories.{" "}
+          <section className="banner">
+            <div className="banner-info">
+              <div className="banner-title">What is My Top Nine?</div>
+              <div className="banner-text">
+                Do you remember Myspace Top 8? If you do, our site will be a
+                nice bit of social nostalgia. If not, well then welcome to a
+                world where friends shared more than just their food choices for
+                the day. My Top Nine is about sharing what you love most across
+                <span> nine different categories</span>.{" "}
+              </div>
             </div>
+
+            <Carousel
+              autoPlay
+              // dynamicHeight={true}
+              infiniteLoop
+              showArrows={false}
+              interval={4000}
+              transitionTime={900}
+              showThumbs={false}
+              showStatus={false}
+              width="500px"
+              height="500px"
+              centerMode
+              centerSlidePercentage={33}
+              className="banner-carousel"
+
+              // transitionTime={100}
+            >
+              <div className="slideimg-container">
+                <img className="slideimg" src={MusicIcon} />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={SportsIcon} />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={MusicIcon} />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={SportsIcon} />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={MusicIcon} />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={SportsIcon} />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={MusicIcon} />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={MusicIcon} />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={MusicIcon} />
+              </div>
+            </Carousel>
           </section>
 
           {/* Top Content */}
@@ -83,6 +134,17 @@ class LandingPage extends React.Component {
 
           {/* Middle Content */}
           <section className="middle-content">
+            <div className="banner-categories">
+              <img className="banner-img" src={MusicIcon} alt=""></img>
+              <img className="banner-img" src={MusicIcon} alt=""></img>
+              <img className="banner-img" src={MusicIcon} alt=""></img>
+              <img className="banner-img" src={MusicIcon} alt=""></img>
+              <img className="banner-img" src={MusicIcon} alt=""></img>
+              <img className="banner-img" src={MusicIcon} alt=""></img>
+              <img className="banner-img" src={MusicIcon} alt=""></img>
+              <img className="banner-img" src={MusicIcon} alt=""></img>
+              <img className="banner-img" src={MusicIcon} alt=""></img>
+            </div>
             <div className="card-columns">
               <div className="card">
                 <img
@@ -201,7 +263,7 @@ class LandingPage extends React.Component {
               </div>
             </div>
 
-            <div classNameName="bottom-btn">
+            <div className="bottom-btn">
               <button className="bottom-btn1">
                 <a
                   href="https://my-top-nine-logan.netlify.com/"
