@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "../footer/Footer";
-
 import MusicCat from "../images/cat2.png";
 import TvCat from "../images/cat8.png";
 import MoviesCat from "../images/cat4.png";
@@ -11,25 +10,16 @@ import SportsCat from "../images/cat15.png";
 import HerosCat from "../images/cat12.png";
 import VillainsCat from "../images/cat13.png";
 import FriendsCat from "../images/cat16.png";
-
-import FilmsImg from "../images/filmswall2.jpg";
-import VilliansImg from "../images/villainswall.jpg";
-import DestinationImg from "../images/destinationwall.jpg";
-import VideoGameImg from "../images/videogamewall.jpg";
-import HerosImg from "../images/heroswall.jpg";
 import AvatarImg from "../images/avatar1.png";
-import MoviesImg from "../images/movieswall.jpg";
-import TvImg from "../images/tvwall.jpg";
-import FoodsImg from "../images/foodswall.jpeg";
-import SportsImg from "../images/sportswall.jpg";
 import SportsIcon from "../images/sportsicon.png";
 import MusicIcon from "../images/musicicon.png";
 import CreateImg from "../images/user12.png";
 import SearchImg from "../images/user5.png";
 import AddImg from "../images/user1.png";
 import ShareImg from "../images/user6.png";
-import Card from "react-bootstrap/Card";
-import CardColumns from "react-bootstrap/Card";
+import QuoteImg1 from "../images/quoteimg1.png";
+import QuoteImg2 from "../images/quoteimg2.png";
+import QuoteImg3 from "../images/quoteimg3.png";
 import "../landing/landing.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -403,15 +393,68 @@ class LandingPage extends React.Component {
           </section>
 
           {/* Bottom Content */}
-          {/* <section class="bottom-content">
-          <div class="bottom-btn">
-            <button class="bottom-btn1">
-              <a href="https://my-top-nine-logan.netlify.com/" target="_blank">
-                Sign Up
-              </a>
-            </button>
-          </div>
-        </section> */}
+          <section className="bottom-content">
+            <div className="bottom-container">
+              <h4 className="bottom-title">"Who's Using It?"</h4>
+              <div className="bottom-text">
+                <h5>
+                  My Top Nine is used by a large variety of satisfied customers
+                  throughout 30 countries. Here's what a few had to say:
+                </h5>
+              </div>
+              <div className="quotes-container">
+                <div className="bottom-quotes">
+                  <h5>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </h5>
+                  <div className="info-wrapper">
+                    <img
+                      className="bottom-img"
+                      src={QuoteImg1}
+                      alt="Card image cap"
+                    />
+                    <div className="bottom-name">Jonathan</div>
+                  </div>
+                </div>
+
+                <div className="bottom-quotes">
+                  <h5>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </h5>
+                  <div className="info-wrapper">
+                    <img
+                      className="bottom-img"
+                      src={QuoteImg2}
+                      alt="Card image cap"
+                    />
+                    <div className="bottom-name">Susan</div>
+                  </div>
+                </div>
+                <div className="bottom-quotes">
+                  <h5>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </h5>
+                  <div className="info-wrapper">
+                    <img
+                      className="bottom-img"
+                      src={QuoteImg3}
+                      alt="Card image cap"
+                    />
+                    <div className="bottom-name">Jill</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* Footer */}
           <Footer />
