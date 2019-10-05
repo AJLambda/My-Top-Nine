@@ -121,6 +121,7 @@ class LandingPage extends React.Component {
                 <img className="slideimg" src={MusicIcon} />
               </div>
             </Carousel>
+            <div className="banner-two"></div>
           </section>
 
           {/* Top Content */}
