@@ -9,19 +9,20 @@
   margin: 0 auto;
   border-top: 2px solid $light-gray;
   padding-bottom: 60px;
+  padding-top: 60px;
 
-  .middle-header {
-    margin: 0px auto 40px auto;
-    padding: 80px;
-    background: #4b88a2;
-    text-align: center;
-    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+  // .middle-header {
+  //   margin: 0px auto 40px auto;
+  //   padding: 80px;
+  //   background: #4b88a2;
+  //   text-align: center;
+  //   box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
 
-    h2 {
-      // padding: 20px;
-      text-align: center;
-    }
-  }
+  //   h2 {
+  //     // padding: 20px;
+  //     text-align: center;
+  //   }
+  // }
 
   .card-container {
     width: 90%;
