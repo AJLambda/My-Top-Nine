@@ -11,18 +11,25 @@
   padding-bottom: 60px;
   padding-top: 60px;
 
-  // .middle-header {
-  //   margin: 0px auto 40px auto;
-  //   padding: 80px;
-  //   background: #4b88a2;
-  //   text-align: center;
-  //   box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+  .middle-header {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 75%;
+    padding: 20px;
+    background: $blue;
+    text-align: center;
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
 
-  //   h2 {
-  //     // padding: 20px;
-  //     text-align: center;
-  //   }
-  // }
+    h2 {
+      text-align: center;
+      font-family: "Nunito", sans-serif;
+      // font-weight: bold;
+      font-size: 25px;
+      color: #fff9fb;
+      // padding: 20px;
+      text-align: center;
+    }
+  }
 
   .card-container {
     width: 90%;

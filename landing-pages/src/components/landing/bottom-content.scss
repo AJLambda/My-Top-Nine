@@ -5,9 +5,9 @@
   // }
 
   .bottom-container {
-    height: 350px;
+    // height: 35px;
     background: white;
-    padding: 40px;
+    padding: 40px 5%;
   }
 
   .bottom-btn1 {
@@ -44,11 +44,18 @@
     padding: 20px;
   }
 
+  .bottom-text h5 {
+    font-size: 16px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
   .quotes-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* justify-content: space-between; */
     padding-top: 20px;
+    padding-bottom: 20px;
 
     .bottom-quotes {
       text-align: left;
