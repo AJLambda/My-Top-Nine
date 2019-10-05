@@ -1,12 +1,23 @@
 import React from "react";
 import Footer from "../footer/Footer";
 
-import MusicImg from "../images/musicwall.jpg";
+import MusicCat from "../images/cat2.png";
+import TvCat from "../images/cat8.png";
+import MoviesCat from "../images/cat4.png";
+import DestinationsCat from "../images/cat14.png";
+import VideoGamesCat from "../images/cat5.png";
+import FoodsCat from "../images/cat11.png";
+import SportsCat from "../images/cat15.png";
+import HerosCat from "../images/cat12.png";
+import VillainsCat from "../images/cat13.png";
+import FriendsCat from "../images/cat16.png";
+
 import FilmsImg from "../images/filmswall2.jpg";
 import VilliansImg from "../images/villainswall.jpg";
 import DestinationImg from "../images/destinationwall.jpg";
 import VideoGameImg from "../images/videogamewall.jpg";
 import HerosImg from "../images/heroswall.jpg";
+import AvatarImg from "../images/avatar1.png";
 import MoviesImg from "../images/movieswall.jpg";
 import TvImg from "../images/tvwall.jpg";
 import FoodsImg from "../images/foodswall.jpeg";
@@ -146,13 +157,18 @@ class LandingPage extends React.Component {
 
           {/* Middle Content */}
           <section className="middle-content">
+            <div className="middle-header">
+              <h2>Customize your personal wall</h2>
+            </div>
             <div className="card-container">
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={MusicImg}
-                  alt="Card image cap"
-                />
+              <div className="card" style={{ gridArea: "one" }}>
+                <div className="img-wrapper">
+                  <img
+                    className="card-img-top"
+                    src={MusicCat}
+                    alt="Card image cap"
+                  />
+                </div>
                 <div className="card-body">
                   <h3 className="card-title">Music Artists</h3>
                   <p className="card-text">
@@ -160,12 +176,14 @@ class LandingPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={SportsImg}
-                  alt="Card image cap"
-                />
+              <div className="card" style={{ gridArea: "eight" }}>
+                <div className="img-wrapper">
+                  <img
+                    className="card-img-top"
+                    src={SportsCat}
+                    alt="Card image cap"
+                  />
+                </div>
                 <div className="card-body">
                   <h3 className="card-title">Sports Teams</h3>
                   <p className="card-text">
@@ -175,12 +193,50 @@ class LandingPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={MoviesImg}
-                  alt="Card image cap"
-                />
+              <div
+                className="card"
+                id="profilecard"
+                style={{
+                  gridArea: "ten",
+                  marginTop: "5px",
+                  marginBottom: "5px"
+                }}
+              >
+                <div className="profileimg-wrapper">
+                  <img
+                    id="profileimg"
+                    className="card-img-top"
+                    src={AvatarImg}
+                    alt="Card image cap"
+                  />
+                </div>
+                <div className="card-body">
+                  <h3 className="card-title">My Profile</h3>
+                  <p className="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer. This is a longer card with supporting
+                    text below as a natural lead-in to additional content. This
+                    content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="card"
+                style={{
+                  gridArea: "two",
+                  alignSelf: "start",
+                  margin: "0 5%",
+                  marginBottom: "10%"
+                }}
+              >
+                <div className="img-wrapper">
+                  <img
+                    className="card-img-top"
+                    src={MoviesCat}
+                    alt="Card image cap"
+                  />
+                </div>
                 <div className="card-body">
                   <h3 className="card-title">Movies</h3>
                   <p className="card-text">
@@ -190,12 +246,21 @@ class LandingPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={TvImg}
-                  alt="Card image cap"
-                />
+              <div
+                className="card"
+                style={{
+                  gridArea: "three",
+                  alignSelf: "start",
+                  margin: "0 5%"
+                }}
+              >
+                <div className="img-wrapper">
+                  <img
+                    className="card-img-top"
+                    src={TvCat}
+                    alt="Card image cap"
+                  />
+                </div>
                 <div className="card-body">
                   <h3 className="card-title">TV Shows</h3>
                   <p className="card-text">
@@ -205,12 +270,14 @@ class LandingPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={FoodsImg}
-                  alt="Card image cap"
-                />
+              <div className="card" style={{ gridArea: "five" }}>
+                <div className="img-wrapper">
+                  <img
+                    className="card-img-top"
+                    src={FoodsCat}
+                    alt="Card image cap"
+                  />
+                </div>
                 <div className="card-body">
                   <h3 className="card-title">Foods</h3>
                   <p className="card-text">
@@ -220,12 +287,31 @@ class LandingPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={DestinationImg}
-                  alt="Card image cap"
-                />
+              <div className="card" style={{ gridArea: "eleven" }}>
+                <div className="img-wrapper">
+                  <img
+                    className="card-img-top"
+                    src={FriendsCat}
+                    alt="Card image cap"
+                  />
+                </div>
+                <div className="card-body">
+                  <h3 className="card-title">Friends</h3>
+                  <p className="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+              <div className="card" style={{ gridArea: "four" }}>
+                <div className="img-wrapper">
+                  <img
+                    className="card-img-top"
+                    src={DestinationsCat}
+                    alt="Card image cap"
+                  />
+                </div>
                 <div className="card-body">
                   <h3 className="card-title">Destinations</h3>
                   <p className="card-text">
@@ -235,12 +321,17 @@ class LandingPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={VilliansImg}
-                  alt="Card image cap"
-                />
+              <div
+                className="card"
+                style={{ gridArea: "six", alignSelf: "end", margin: "0 5%" }}
+              >
+                <div className="img-wrapper">
+                  <img
+                    className="card-img-top"
+                    src={VillainsCat}
+                    alt="Card image cap"
+                  />
+                </div>
                 <div className="card-body">
                   <h3 className="card-title">Villains</h3>
                   <p className="card-text">
@@ -250,12 +341,19 @@ class LandingPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={VideoGameImg}
-                  alt="Card image cap"
-                />
+              <div
+                className="card"
+                style={{
+                  gridArea: "nine"
+                }}
+              >
+                <div className="img-wrapper">
+                  <img
+                    className="card-img-top"
+                    src={VideoGamesCat}
+                    alt="Card image cap"
+                  />
+                </div>
                 <div className="card-body">
                   <h3 className="card-title">Video Games</h3>
                   <p className="card-text">
@@ -265,12 +363,21 @@ class LandingPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div className="card">
-                <img
-                  className="card-img-top"
-                  src={HerosImg}
-                  alt="Card image cap"
-                />
+              <div
+                className="card"
+                style={{
+                  gridArea: "seven",
+                  alignSelf: "end",
+                  margin: "0 5%"
+                }}
+              >
+                <div className="img-wrapper">
+                  <img
+                    className="card-img-top"
+                    src={HerosCat}
+                    alt="Card image cap"
+                  />
+                </div>
                 <div className="card-body">
                   <h3 className="card-title">Heros</h3>
                   <p className="card-text">

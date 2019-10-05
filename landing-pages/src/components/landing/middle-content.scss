@@ -5,21 +5,49 @@
   // background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  padding: 30px 5%;
+  // padding: 30px 5%;
+  margin: 0 auto;
   border-top: 2px solid $light-gray;
+  padding-bottom: 60px;
+
+  .middle-header {
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+
+    h2 {
+      // padding: 20px;
+      text-align: center;
+    }
+  }
 
   .card-container {
+    width: 90%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 20px;
-    column-gap: 5%;
-    row-gap: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+    // grid-template-rows: auto;
+
+    grid-template-areas:
+      "one two three four"
+      "one two three four"
+      "nine ten ten eleven"
+      "nine ten ten eleven"
+      "nine ten ten five"
+      "eight seven six five";
+
+    // margin: 20px;
+    // column-gap: 2%;
+    // row-gap: 3%;
   }
 
   .card {
+    margin: 7%;
     border-radius: 3px;
     box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
-    height: 300px;
+    // max-height: 400px;
 
     .card-text {
       font-size: 13px;
@@ -27,17 +55,20 @@
     }
 
     h3 {
-      color: $red;
+      // color: $red;
       text-decoration: none;
     }
 
     .card-img-top {
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
-
-      width: 100%;
-      height: 160px;
-      box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+      width: 80%;
+      padding: 15%;
+      padding-bottom: 5px;
+      // height: 60%;
+      // padding: 20px;
+      // height: 160px;
+      // box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
     }
   }
   .text-content {
@@ -120,4 +151,31 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+#profilecard {
+  h3 {
+    font-size: 20px;
+    // font-weight: bold;
+    color: $red;
+    font-family: "Nunito", sans-serif;
+    // font-weight: bold;
+  }
+}
+#profileimg {
+  width: 40%;
+  padding: 10px;
+  box-shadow: none;
+}
+
+.profileimg-wrapper {
+  background: #4d8db0;
+  width: 100%;
+  box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.img-wrapper {
+  // background: $light-gray;
+  width: 100%;
+  // box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
 }
