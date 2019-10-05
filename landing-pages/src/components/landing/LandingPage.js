@@ -149,7 +149,7 @@ class LandingPage extends React.Component {
           {/* Middle Content */}
           <section className="middle-content">
             <div className="middle-header">
-              <h2>Customize your personal wall</h2>
+              <h2>My Top Nine wall</h2>
             </div>
             <div className="card-container">
               <div className="card" style={{ gridArea: "one" }}>
@@ -202,7 +202,7 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">My Profile</h3>
+                  <h3 className="card-title">Alyssa B.</h3>
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -380,7 +380,7 @@ class LandingPage extends React.Component {
               </div>
             </div>
 
-            <div className="bottom-btn">
+            {/* <div className="bottom-btn">
               <button className="bottom-btn1">
                 <a
                   href="https://my-top-nine-logan.netlify.com/"
@@ -389,7 +389,7 @@ class LandingPage extends React.Component {
                   Sign Up
                 </a>
               </button>
-            </div>
+            </div> */}
           </section>
 
           {/* Bottom Content */}
