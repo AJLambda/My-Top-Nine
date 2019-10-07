@@ -4,6 +4,40 @@
   //   margin-top: 20%;
   // }
 
+  .bottom-banner {
+    background: $light-blue;
+    padding: 40px;
+    text-align: center;
+    font-size: 25px;
+    height: 300px;
+    width: 100%;
+
+    text-align: center;
+    box-shadow: 0 5px 3px 0px rgba(0, 0, 0, 0.2);
+    // position: relative;
+    // z-index: 5;
+
+    span {
+      color: $red;
+    }
+    h2 {
+      font-family: "Nunito", sans-serif;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 0 auto;
+      // width: 50%;
+      // background: white;
+      text-align: center;
+      // font-family: "Nunito", sans-serif;
+      // font-weight: bold;
+      font-size: 40px;
+      color: $black;
+      // padding: 20px;
+      text-align: center;
+    }
+  }
+
   .bottom-container {
     // height: 35px;
     background: white;

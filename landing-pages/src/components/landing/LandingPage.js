@@ -35,13 +35,14 @@ class LandingPage extends React.Component {
               <h1 id="ctaHeading">
                 Share your <span>top nine</span> with friends.
               </h1>
-              {/* <div className="cta-btn">
+
+              <div className="cta-btn">
                 <button className="cta-btn1">
                   <a href="https://my-top-nine-logan.netlify.com/">
-                    <span>Join us</span>
+                    <span>Sign Up</span>
                   </a>
                 </button>
-              </div> */}
+              </div>
               <div className="cta-btn-mobile">
                 <button className="cta-btn2">
                   <a href="https://my-top-nine-logan.netlify.com/">
@@ -116,32 +117,50 @@ class LandingPage extends React.Component {
 
           {/* Top Content */}
           <section className="top-content">
-            <div className="content-box">
-              <img className="top-img" src={CreateImg} alt=""></img>
-              <div className="top-title">Create</div>
-              <div className="top-text">
-                Create a profile and use your wall to build your Top Nine
+            <div className="top-wrapper">
+              <div className="content-box">
+                <div className="top-circle">
+                  <span>
+                    <img className="top-img" src={CreateImg} alt="" />
+                  </span>
+                </div>
+                <div className="top-title">Create</div>
+                <div className="top-text">
+                  Create a profile and use your wall to build your Top Nine
+                </div>
               </div>
-            </div>
-            <div className="content-box">
-              <img className="top-img" src={SearchImg} alt=""></img>
-              <div className="top-title">Choose</div>
-              <div className="top-text">
-                Choose your favorite selections from each category
+              <div className="content-box">
+                <div className="top-circle">
+                  <span>
+                    <img className="top-img" src={SearchImg} alt="" />
+                  </span>
+                </div>
+                <div className="top-title">Choose</div>
+                <div className="top-text">
+                  Choose your favorite selections from each category
+                </div>
               </div>
-            </div>
-            <div className="content-box">
-              <img className="top-img" src={AddImg} alt=""></img>
-              <div className="top-title">Add</div>
-              <div className="top-text">
-                Add your new choice to your Top Nine wall
+              <div className="content-box">
+                <div className="top-circle">
+                  <span>
+                    <img className="top-img" src={AddImg} alt="" />
+                  </span>
+                </div>
+                <div className="top-title">Add</div>
+                <div className="top-text">
+                  Add your new choice to your Top Nine wall
+                </div>
               </div>
-            </div>
-            <div className="content-box">
-              <img className="top-img" src={ShareImg} alt=""></img>
-              <div className="top-title">Share</div>
-              <div className="top-text">
-                Share your wall with your friends and compare!
+              <div className="content-box">
+                <div className="top-circle">
+                  <span>
+                    <img className="top-img" src={ShareImg} alt="" />
+                  </span>
+                </div>
+                <div className="top-title">Share</div>
+                <div className="top-text">
+                  Share your wall with your friends and compare!
+                </div>
               </div>
             </div>
           </section>
@@ -149,8 +168,11 @@ class LandingPage extends React.Component {
           {/* Middle Content */}
           <section className="middle-content">
             <div className="middle-header">
-              <h2>My Top Nine wall</h2>
+              <h2>
+                My Top Nine <span>wall</span>
+              </h2>
             </div>
+
             <div className="card-container">
               <div className="card" style={{ gridArea: "one" }}>
                 <div className="img-wrapper">
@@ -161,7 +183,16 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Music Artists</h3>
+                  <h3 className="card-title">
+                    Music Artists
+                    <span style={{ display: "block" }}>
+                      <img
+                        src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                        alt=""
+                        // style={{ display: "block" }}
+                      ></img>
+                    </span>
+                  </h3>
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                   </p>
@@ -379,7 +410,6 @@ class LandingPage extends React.Component {
                 </div>
               </div>
             </div>
-
             {/* <div className="bottom-btn">
               <button className="bottom-btn1">
                 <a
@@ -394,6 +424,9 @@ class LandingPage extends React.Component {
 
           {/* Bottom Content */}
           <section className="bottom-content">
+            <div className="bottom-banner">
+              <h2>bannerrr</h2>{" "}
+            </div>
             <div className="bottom-container">
               <h4 className="bottom-title">"Who's Using It?"</h4>
               <div className="bottom-text">

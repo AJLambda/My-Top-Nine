@@ -12,7 +12,8 @@
   // padding-top: 60px;
 
   .middle-header {
-    background: $blue;
+    position: relative;
+    background: $light-blue;
     padding: 40px;
     text-align: center;
     font-size: 25px;
@@ -26,13 +27,26 @@
       color: $red;
     }
     h2 {
+      font-family: "Nunito", sans-serif;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 0 auto;
+      width: 50%;
+      // background: white;
       text-align: center;
       // font-family: "Nunito", sans-serif;
       // font-weight: bold;
       font-size: 40px;
-      color: $white;
+      color: $black;
       // padding: 20px;
       text-align: center;
+    }
+
+    .middle-underline {
+      position: absolute;
+      bottom: 50px;
+      margin-left: 87px;
     }
   }
 
