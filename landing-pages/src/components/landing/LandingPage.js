@@ -22,7 +22,6 @@ import QuoteImg2 from "../images/quoteimg2.png";
 import QuoteImg3 from "../images/quoteimg3.png";
 import Logo from "../images/logo.png";
 import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
 import Fab from "@material-ui/core/Fab";
 import "../landing/landing.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -41,9 +40,6 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: "#A3091D"
     },
     margin: theme.spacing(1)
-  },
-  extendedIcon: {
-    marginRight: theme.spacing(1)
   }
 }));
 
