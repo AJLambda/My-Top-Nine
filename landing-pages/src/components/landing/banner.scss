@@ -1,12 +1,14 @@
 .banner {
   background: #fbf9f8;
+  padding-bottom: 30px;
+  padding-top: 10px;
   // height: 400px;
   display: flex;
   flex-direction: column;
   height: 70%;
 
   .banner-info {
-    margin-top: 20px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,9 +17,15 @@
     position: relative;
     z-index: 1;
 
-    .banner-title {
-      color: #4b88a2;
-      font-size: 30px;
+    // .banner-title {
+    //   color: #4b88a2;
+    //   font-size: 30px;
+    // }
+
+    h2 {
+      // color: #000;
+      color: rgb(33, 32, 31);
+      font-size: 3.5rem;
     }
 
     // br {
@@ -26,13 +34,15 @@
 
     .banner-text {
       // text-align: center;
-      color: grey;
-      font-size: 15px;
+      // color: grey;
+      color: #000;
+      font-size: 16px;
       line-height: 2.6rem;
       padding-top: 20px;
       // padding: 20px 20% 10px 20%;
 
       span {
+        font-weight: bold;
         color: $red;
       }
     }
@@ -54,16 +64,16 @@
     padding: 70px 0;
   }
 
-  h2 {
-    color: $white;
-    text-align: center;
-    font-size: 3rem;
-    font-family: "Nunito", sans-serif;
+  // h2 {
+  //   color: $white;
+  //   text-align: center;
+  //   font-size: 3rem;
+  //   font-family: "Nunito", sans-serif;
 
-    @media (max-width: $mobile) {
-      font-size: 3rem;
-    }
-  }
+  //   @media (max-width: $mobile) {
+  //     font-size: 3rem;
+  //   }
+  // }
 }
 
 // Carousel

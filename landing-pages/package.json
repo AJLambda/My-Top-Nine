@@ -8,6 +8,8 @@
     "@fortawesome/react-fontawesome": "^0.1.5",
     "@material-ui/core": "^4.4.3",
     "bootstrap": "^4.3.1",
+    "compass": "^0.1.1",
+    "compass-mixins": "^0.12.10",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.10.1",

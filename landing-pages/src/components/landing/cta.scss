@@ -24,11 +24,12 @@
     // background: #fbf9f8;
     color: $black;
     // font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
+    // font-weight: 400;
     position: absolute;
     text-align: center;
     // text-shadow: 2px 2px 3px;
-    top: 19%;
+    top: 17%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
@@ -47,7 +48,9 @@
   .cta-btn1 {
     // margin-top: 300px;
     // margin: 370px auto 0 auto;
-    padding: 1.2% 3.5%;
+    height: 45px;
+    width: 175px;
+    // padding: 0.8% 3.5%;
     // width: 15;
     background: firebrick;
     // opacity: 0.9;
@@ -60,7 +63,7 @@
     // // margin-top: 80px;
     // align-self: flex-end;
     bottom: 3%;
-    right: 44%;
+    right: 43%;
     // transform: translateX(-50%) translateY(-50%);
     border: none;
     border-radius: 5px;

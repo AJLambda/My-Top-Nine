@@ -1,5 +1,6 @@
 .top-content {
   background-color: white;
+  padding-bottom: 30px;
   // // margin: 5%;
   // // padding-left: 5%;
   // // background-image: linear-gradient(rgb(37, 38, 39), rgb(233, 236, 239));
@@ -16,7 +17,7 @@
   z-index: 1;
 
   .top-wrapper {
-    padding: 5% 3% 5% 3%;
+    padding: 5%;
     background-color: white;
     // margin: 5%;
     // padding-left: 5%;
@@ -35,8 +36,9 @@
   }
 
   h2 {
-    font-size: 2rem;
-    color: $red;
+    padding-top: 40px;
+    font-size: 3.5rem;
+    color: $dark-black;
     text-align: center;
     font-weight: normal;
 
@@ -51,38 +53,72 @@
     height: 100px;
     background: $snow;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     border-radius: 50%;
   }
 
   .top-img {
-    margin-top: 10px;
+    // margin-top: 10px;
     width: 60px;
     height: 60px;
-
-    ::before {
-      content: "";
-      display: inline-block;
-      width: 15px;
-      height: 15px;
-      -moz-border-radius: 7.5px;
-      -webkit-border-radius: 7.5px;
-      border-radius: 7.5px;
-      background-color: #69b6d5;
-    }
   }
 
   .top-title {
+    padding-top: 20px;
+    font-family: "ProximaBold";
     // color: $red;
     font-size: 25px;
-    margin: 15px 0 15px 0;
+    // margin: 15px 0 15px 0;
   }
 
   .top-text {
-    color: grey;
+    color: #000;
     font-size: 14px;
     font-weight: lighter;
     padding: 10px 5% 10px 5%;
     line-height: 2rem;
+    padding-bottom: 5px;
+
+    .underline {
+      display: inline-block;
+      padding-bottom: 3px;
+
+      // text-decoration: underline;
+      // position: relative;
+      background: url("https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/77569119-toogood-line_04x00402300301f000.png");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 110% 11%;
+    }
+  }
+
+  .top-btn {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    .top-btn1 {
+      // margin-top: 300px;
+      // margin: 370px auto 0 auto;
+      width: 300px;
+      height: 60px;
+
+      padding: 1.2% 3.5%;
+      // width: 15;
+      background: firebrick;
+      // opacity: 0.9;
+      color: $white;
+      font-size: 2rem;
+      font-family: "Nunito", sans-serif;
+      font-weight: bold;
+      // position: absolute;
+      text-align: center;
+      // // margin-top: 80px;
+      // align-self: flex-end;
+      // bottom: 3%;
+      // right: 44%;
+      margin: 0 auto;
+      // transform: translateX(-50%) translateY(-50%);
+      border: none;
+      border-radius: 5px;
+    }
   }
 }

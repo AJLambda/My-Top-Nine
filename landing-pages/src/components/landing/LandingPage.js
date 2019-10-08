@@ -20,6 +20,7 @@ import ShareImg from "../images/user6.png";
 import QuoteImg1 from "../images/quoteimg1.png";
 import QuoteImg2 from "../images/quoteimg2.png";
 import QuoteImg3 from "../images/quoteimg3.png";
+import Logo from "../images/logo.png";
 import "../landing/landing.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -56,7 +57,9 @@ class LandingPage extends React.Component {
           {/* Banner */}
           <section className="banner">
             <div className="banner-info">
-              <div className="banner-title">What is My Top Nine?</div>
+              <div className="banner-title">
+                <h2>What is My Top Nine?</h2>
+              </div>
               <div className="banner-text">
                 Do you remember Myspace Top 8? If so, our site will be a nice
                 bit of social nostalgia. <br />
@@ -117,6 +120,9 @@ class LandingPage extends React.Component {
 
           {/* Top Content */}
           <section className="top-content">
+            <div className="top-title">
+              <h2>How does it work?</h2>
+            </div>
             <div className="top-wrapper">
               <div className="content-box">
                 <div className="top-circle">
@@ -126,7 +132,8 @@ class LandingPage extends React.Component {
                 </div>
                 <div className="top-title">Create</div>
                 <div className="top-text">
-                  Create a profile and use your wall to build your Top Nine
+                  Create a profile and use your wall to{" "}
+                  <span className="underline"> build your Top Nine</span>
                 </div>
               </div>
               <div className="content-box">
@@ -137,7 +144,9 @@ class LandingPage extends React.Component {
                 </div>
                 <div className="top-title">Choose</div>
                 <div className="top-text">
-                  Choose your favorite selections from each category
+                  Choose your{" "}
+                  <span className="underline">favorite selections</span> from
+                  each category
                 </div>
               </div>
               <div className="content-box">
@@ -159,18 +168,39 @@ class LandingPage extends React.Component {
                 </div>
                 <div className="top-title">Share</div>
                 <div className="top-text">
-                  Share your wall with your friends and compare!
+                  <span className="underline">Share your wall</span> with your
+                  friends and compare!
                 </div>
               </div>
+            </div>
+            <div className="top-btn">
+              <button className="top-btn1">
+                <a href="https://my-top-nine-logan.netlify.com/">
+                  <span>Get Started</span>
+                </a>
+              </button>
             </div>
           </section>
 
           {/* Middle Content */}
           <section className="middle-content">
             <div className="middle-header">
-              <h2>
-                My Top Nine <span>wall</span>
-              </h2>
+              <div className="ribbon">
+                <span className="ribbon5">
+                  <div className="shadow-box">
+                    <div className="content">
+                      <h2>My Top Nine Wall</h2>
+                    </div>
+                  </div>
+                </span>
+              </div>
+
+              {/* <div className="middle-title">
+                <h3>
+                  Create and customize your wall and see which friends share
+                  similar taste!
+                </h3>
+              </div> */}
             </div>
 
             <div className="card-container">
@@ -185,7 +215,7 @@ class LandingPage extends React.Component {
                 <div className="card-body">
                   <h3 className="card-title">
                     Music Artists
-                    <span style={{ display: "block" }}>
+                    <span style={{ display: "block", width: "70%" }}>
                       <img
                         src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
                         alt=""
@@ -207,7 +237,17 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Sports Teams</h3>
+                  <h3 className="card-title">
+                    Sports Teams
+                    <span style={{ display: "block", width: "50%" }}>
+                      <img
+                        src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                        alt=""
+                        // style={{ display: "block" }}
+                      ></img>
+                    </span>
+                  </h3>
+
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -233,7 +273,15 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Alyssa B.</h3>
+                  <h3 className="card-title">
+                    <span className="logo-span">
+                      <img className="logo-img" src={Logo} alt="" />
+                    </span>
+                    Alyssa B.
+                    <span className="logo-span">
+                      <img className="logo-img" src={Logo} alt="" />
+                    </span>
+                  </h3>
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -260,7 +308,16 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Movies</h3>
+                  <h3 className="card-title">
+                    Movies
+                    <span style={{ display: "block", width: "50%" }}>
+                      <img
+                        src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                        alt=""
+                        // style={{ display: "block" }}
+                      ></img>
+                    </span>
+                  </h3>
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -284,7 +341,16 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">TV Shows</h3>
+                  <h3 className="card-title">
+                    TV Shows
+                    <span style={{ display: "block", width: "70%" }}>
+                      <img
+                        src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                        alt=""
+                        // style={{ display: "block" }}
+                      ></img>
+                    </span>
+                  </h3>
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -301,7 +367,16 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Foods</h3>
+                  <h3 className="card-title">
+                    Foods
+                    <span style={{ display: "block", width: "50%" }}>
+                      <img
+                        src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                        alt=""
+                        // style={{ display: "block" }}
+                      ></img>
+                    </span>
+                  </h3>
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -318,7 +393,16 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Friends</h3>
+                  <h3 className="card-title">
+                    Friends
+                    <span style={{ display: "block", width: "50%" }}>
+                      <img
+                        src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                        alt=""
+                        // style={{ display: "block" }}
+                      ></img>
+                    </span>
+                  </h3>
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -335,7 +419,16 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Destinations</h3>
+                  <h3 className="card-title">
+                    Destinations
+                    <span style={{ display: "block", width: "60%" }}>
+                      <img
+                        src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                        alt=""
+                        // style={{ display: "block" }}
+                      ></img>
+                    </span>
+                  </h3>
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -355,7 +448,16 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Villains</h3>
+                  <h3 className="card-title">
+                    Villains
+                    <span style={{ display: "block", width: "60%" }}>
+                      <img
+                        src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                        alt=""
+                        // style={{ display: "block" }}
+                      ></img>
+                    </span>
+                  </h3>
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -377,7 +479,16 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Video Games</h3>
+                  <h3 className="card-title">
+                    Video Games
+                    <span style={{ display: "block", width: "80%" }}>
+                      <img
+                        src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                        alt=""
+                        // style={{ display: "block" }}
+                      ></img>
+                    </span>
+                  </h3>
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -401,7 +512,16 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">Heros</h3>
+                  <h3 className="card-title">
+                    Heros
+                    <span style={{ display: "block", width: "50%" }}>
+                      <img
+                        src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                        alt=""
+                        // style={{ display: "block" }}
+                      ></img>
+                    </span>
+                  </h3>
                   <p className="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -425,7 +545,9 @@ class LandingPage extends React.Component {
           {/* Bottom Content */}
           <section className="bottom-content">
             <div className="bottom-banner">
-              <h2>bannerrr</h2>{" "}
+              <h2>
+                Express your interests and get to know your friends better!
+              </h2>{" "}
             </div>
             <div className="bottom-container">
               <h4 className="bottom-title">"Who's Using It?"</h4>

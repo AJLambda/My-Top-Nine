@@ -1,12 +1,24 @@
-//Color Assignments
+// Color Assignments
 $gray: #d3d4d9;
 $light-gray: #eeeff1;
 $blue: #4b88a2;
 $red: #bb0a21;
 $black: #252627;
+$dark-black: #21201f;
 $white: #fff9fb;
 $light-blue: #d3e0e8;
+$dark-blue: #00a9b6;
 $snow: #fbf9f8;
-//Escaping
+// Escaping
 $mobile: 375px;
 $tablet: 800px;
+
+// Fonts
+@font-face {
+  font-family: "ProximaBold";
+  src: url("../fonts/ProximaNovaBold.otf") format("truetype");
+}
+@font-face {
+  font-family: "Proxima";
+  src: url("../fonts/ProximaNovaRegular.otf") format("truetype");
+}

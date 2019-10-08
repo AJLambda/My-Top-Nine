@@ -11,34 +11,111 @@
   padding-bottom: 40px;
   // padding-top: 60px;
 
+  .ribbon {
+    // padding: 20px;
+    height: 120px;
+    position: relative;
+    margin-bottom: 30px;
+    background: white;
+    background-size: cover;
+    // text-transform: uppercase;
+    color: white;
+  }
+
+  .ribbon5 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: block;
+    width: calc(100% + 20px);
+    height: 100px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    background: rgb(56, 136, 167);
+    background: linear-gradient(
+      90deg,
+      rgba(56, 136, 167, 1) 0%,
+      rgba(56, 136, 167, 1) 6%,
+      rgba(211, 224, 232, 1) 21%,
+      rgba(211, 224, 232, 1) 79%,
+      rgba(56, 136, 167, 1) 94%,
+      rgba(56, 136, 167, 1) 100%
+    );
+    position: relative;
+    top: 20px;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+  .ribbon5:before,
+  .ribbon5:after {
+    content: "";
+    position: absolute;
+  }
+  .ribbon5:before {
+    height: 0;
+    width: 0;
+    bottom: -10px;
+    left: 0;
+    border-top: 10px solid white;
+    border-left: 10px solid transparent;
+  }
+  .ribbon5:after {
+    height: 0;
+    width: 0;
+    right: 0;
+    bottom: -10px;
+    border-top: 10px solid white;
+    border-right: 10px solid transparent;
+  }
+
   .middle-header {
     position: relative;
     background: $light-blue;
-    padding: 40px;
+    // padding: 40px;
     text-align: center;
     font-size: 25px;
 
     text-align: center;
-    box-shadow: 0 5px 3px 0px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 5px 3px 0px rgba(0, 0, 0, 0.2);
     // position: relative;
     // z-index: 5;
+
+    .shadow-box {
+      border-top: 1.5px dashed white;
+      border-bottom: 1.5px dashed white;
+      height: 100%;
+    }
+
+    .shadow-box .content {
+      margin: 0 auto;
+      // letter-spacing: -5px;
+      // display: table-cell;
+      // vertical-align: middle;
+      // padding: 20px;
+      font-weight: bold;
+      height: 100%;
+      font-size: 3em;
+      text-align: center;
+    }
 
     span {
       color: $red;
     }
     h2 {
-      font-family: "Nunito", sans-serif;
+      // font-family: "Nunito", sans-serif;
       font-weight: bold;
       border-radius: 5px;
       padding: 10px;
+      padding-top: 15px;
       margin: 0 auto;
-      width: 50%;
+      // width: 50%;
       // background: white;
       text-align: center;
       // font-family: "Nunito", sans-serif;
       // font-weight: bold;
       font-size: 40px;
-      color: $black;
+      color: $blue;
       // padding: 20px;
       text-align: center;
     }
@@ -47,6 +124,15 @@
       position: absolute;
       bottom: 50px;
       margin-left: 87px;
+    }
+  }
+
+  .middle-title {
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      // font-size: 20px;
+      color: rgb(80, 80, 80);
     }
   }
 
@@ -77,9 +163,26 @@
     box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
     // max-height: 400px;
 
+    .logo-span {
+      padding: 10px;
+      .logo-img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
     .card-text {
       font-size: 13px;
-      color: gray;
+      color: black;
+    }
+
+    .card-title span {
+      margin: 0 auto;
+
+      // img {
+      //   width: 30px;
+      //   width: 30px;
+      // }
     }
 
     h3 {
@@ -185,7 +288,7 @@
   h3 {
     font-size: 24px;
 
-    // font-weight: bold;
+    font-weight: bold;
     color: $red;
     font-family: "Nunito", sans-serif;
     // font-weight: bold;
