@@ -48,8 +48,8 @@ class Footer extends React.Component {
             <label htmlFor="email">Email</label>
             <InputGroup size="lg" className="mb-3">
               <FormControl
-                placeholder="Recipient's email"
-                aria-label="Recipient's email"
+                placeholder="email@address.com"
+                aria-label="email@address.com"
                 aria-describedby="basic-addon2"
                 id="email"
               />

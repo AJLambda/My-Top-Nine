@@ -1,11 +1,13 @@
 .cta {
   background-image: url("../images/VirtualComm1.png");
-  // display: flex;
-  height: 95vh;
-  background-size: 80% 100%;
+  background-image: url(/static/media/VirtualComm1.7ccd99a1.png);
+  height: 100vh;
+  margin-top: 20px;
+  background-size: 90% 100%;
   background-position: bottom;
   background-repeat: no-repeat;
   background-color: #fbf9f8;
+
   // border-bottom: 3px solid white;
 
   // position: relative;
@@ -24,13 +26,13 @@
     // background: #fbf9f8;
     color: $black;
     // font-weight: bold;
-    font-size: 3.3rem;
+    font-size: 3.8rem;
     // font-weight: 400;
     position: absolute;
     text-align: center;
     // text-shadow: 2px 2px 3px;
-    top: 17%;
-    left: 50%;
+    top: 19%;
+    left: 51%;
     transform: translateX(-50%) translateY(-50%);
 
     span {
