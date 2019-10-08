@@ -46,6 +46,7 @@
   }
 
   .cta-btn1 {
+    text-transform: uppercase;
     // margin-top: 300px;
     // margin: 370px auto 0 auto;
     height: 45px;
@@ -55,7 +56,7 @@
     background: firebrick;
     // opacity: 0.9;
     color: $white;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     position: absolute;

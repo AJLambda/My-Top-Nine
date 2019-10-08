@@ -96,9 +96,10 @@
     margin-bottom: 40px;
     margin-top: 20px;
     .top-btn1 {
+      text-transform: uppercase;
       // margin-top: 300px;
       // margin: 370px auto 0 auto;
-      width: 300px;
+      width: 250px;
       height: 60px;
 
       padding: 1.2% 3.5%;
@@ -106,7 +107,7 @@
       background: firebrick;
       // opacity: 0.9;
       color: $white;
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-family: "Nunito", sans-serif;
       font-weight: bold;
       // position: absolute;
