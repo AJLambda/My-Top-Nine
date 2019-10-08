@@ -9,7 +9,7 @@
     padding: 40px;
     text-align: center;
     font-size: 25px;
-    height: 300px;
+    // height: 300px;
     width: 100%;
 
     text-align: center;
@@ -22,8 +22,9 @@
     }
     h2 {
       // font-family: "Sakura", serif !important;
+      font-family: "friday";
+      // font-weight: lighter;
 
-      font-weight: bold;
       border-radius: 5px;
       padding: 10px;
       margin: 0 auto;
@@ -31,8 +32,8 @@
       // background: white;
       text-align: center;
       // font-family: "Nunito", sans-serif;
-      // font-weight: bold;
-      font-size: 40px;
+
+      font-size: 60px;
       color: $snow;
       // padding: 20px;
       text-align: center;
@@ -45,21 +46,32 @@
     padding: 40px 5%;
   }
 
+  .bottom-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   .bottom-btn1 {
-    background: $white;
-    color: $black;
-    font-size: 4rem;
+    // margin-top: 300px;
+    // margin: 370px auto 0 auto;
+    height: 45px;
+    width: 200px;
+    // padding: 15px;
+    // width: 15;
+    background: firebrick;
+    // opacity: 0.9;
+    color: $white;
+    font-size: 2rem;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
-    text-align: center;
-    padding: 20px 20%;
-    border: 3px solid $black;
-    border-radius: 10px;
 
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.15);
-    }
+    text-align: center;
+    // // margin-top: 80px;
+    // align-self: flex-end;
+
+    // transform: translateX(-50%) translateY(-50%);
+    border: none;
+    border-radius: 5px;
 
     // .button-maker(@white, @blue);
 

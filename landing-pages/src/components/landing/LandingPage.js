@@ -273,7 +273,7 @@ class LandingPage extends React.Component {
                   />
                 </div>
                 <div className="card-body">
-                  <h3 className="card-title">
+                  <h3 className="card-title" id="alyssa">
                     <span className="logo-span">
                       <img className="logo-img" src={Logo} alt="" />
                     </span>
@@ -548,6 +548,13 @@ class LandingPage extends React.Component {
               <h2>
                 Express your interests and get to know your friends better!
               </h2>{" "}
+              <div className="bottom-btn">
+                <button className="bottom-btn1">
+                  <a href="https://my-top-nine-logan.netlify.com/">
+                    Create your wall
+                  </a>
+                </button>
+              </div>
             </div>
             <div className="bottom-container">
               <h4 className="bottom-title">"Who's Using It?"</h4>
