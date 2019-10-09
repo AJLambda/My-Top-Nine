@@ -17,10 +17,10 @@ const useStyles = makeStyles(theme => ({
     fontSize: "16px",
     color: "#fbf9f8",
     fontWeight: "bold",
-    // backgroundColor: "#bb0a21",
-    // "&:hover": {
-    //   backgroundColor: "#A3091D"
-    // },
+    backgroundColor: "#bb0a21",
+    "&:hover": {
+      backgroundColor: "#A3091D"
+    },
     margin: theme.spacing(1)
   },
   extendedIcon: {

@@ -220,7 +220,7 @@ export default function LandingPage() {
           <div className="top-btn">
             <Fab
               variant="extended"
-              // color="primary"
+              color="primary"
               aria-label="add"
               className={classes.topBtn}
             >
@@ -581,7 +581,10 @@ export default function LandingPage() {
         {/* Bottom Content */}
         <section className="bottom-content">
           <div className="bottom-banner">
-            <h2>Express your interests and get to know your friends better!</h2>{" "}
+            <h2>
+              <span className="underline2">Express your interests</span> and get
+              to know your friends better!
+            </h2>{" "}
             <div className="bottom-btn">
               <Fab
                 variant="extended"
