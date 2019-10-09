@@ -186,7 +186,7 @@ export default function LandingPage() {
               </div>
               <div className="top-title">Add</div>
               <div className="top-text">
-                Add your new choice to your Top Nine wall
+                Add and arrange your new choice to your Top Nine wall
               </div>
             </div>
             <div className="content-box">
@@ -584,17 +584,17 @@ export default function LandingPage() {
             <h4 className="bottom-title">"Who's Using It?"</h4>
             <div className="bottom-text">
               <h5>
-                My Top Nine is used by a large variety of satisfied customers
-                throughout 30 countries. Here's what a few had to say:
+                My Top Nine is used by people like you across the globe. Here's
+                what a few had to say:
               </h5>
             </div>
             <div className="quotes-container">
               <div className="bottom-quotes">
                 <h5>
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  "Finally, a social media site that encourages creativity! I
+                  really enjoy building and organizing my wall, the whole
+                  process is so easy and intuitive. It's like having my own mini
+                  website."
                 </h5>
                 <div className="info-wrapper">
                   <img
@@ -608,10 +608,9 @@ export default function LandingPage() {
 
               <div className="bottom-quotes">
                 <h5>
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  "I love that there are so many different categories. My Top
+                  Nine has such a deep collection that I am able to find and
+                  share almost anything, even local artists that I listen to."
                 </h5>
                 <div className="info-wrapper">
                   <img
@@ -624,10 +623,9 @@ export default function LandingPage() {
               </div>
               <div className="bottom-quotes">
                 <h5>
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  "In a world with a million different social apps it's funny
+                  how little we actually know about each other. My Top Nine is a
+                  great icebreaker to get to know what people really like."
                 </h5>
                 <div className="info-wrapper">
                   <img
