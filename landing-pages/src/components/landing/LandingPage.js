@@ -27,6 +27,8 @@ import ShareImg from "../images/user6.png";
 import QuoteImg1 from "../images/quoteimg1.png";
 import QuoteImg2 from "../images/quoteimg2.png";
 import QuoteImg3 from "../images/quoteimg3.png";
+import Underline1 from "../images/underline1.png";
+import Underline3 from "../images/underline3.png";
 import Logo from "../images/logo.png";
 import { makeStyles } from "@material-ui/core/styles";
 import Fab from "@material-ui/core/Fab";
@@ -160,7 +162,7 @@ export default function LandingPage() {
               <div className="top-title">Create</div>
               <div className="top-text">
                 Create a profile and use your wall to{" "}
-                <span className="underline"> build your Top Nine</span>
+                <span className="underline3"> build your Top Nine</span>
               </div>
             </div>
             <div className="content-box">
@@ -172,8 +174,8 @@ export default function LandingPage() {
               <div className="top-title">Choose</div>
               <div className="top-text">
                 Choose your{" "}
-                <span className="underline">favorite selections</span> from each
-                category
+                <span className="underline2">favorite selections</span> from
+                each category
               </div>
             </div>
             <div className="content-box">
@@ -195,7 +197,7 @@ export default function LandingPage() {
               </div>
               <div className="top-title">Share</div>
               <div className="top-text">
-                <span className="underline">Share your wall</span> with your
+                <span className="underline4">Share your wall</span> with your
                 friends and compare!
               </div>
             </div>
@@ -247,14 +249,15 @@ export default function LandingPage() {
                   Music Artists
                   <span style={{ display: "block", width: "70%" }}>
                     <img
-                      src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                      src={Underline1}
                       alt=""
                       // style={{ display: "block" }}
                     ></img>
                   </span>
                 </h3>
                 <p className="card-text">
-                  This is a longer card with supporting text below as a
+                  From Frank Sinatra to Metallica, choose from a wide range of
+                  artists across multiple genres.
                 </p>
               </div>
             </div>
@@ -271,7 +274,7 @@ export default function LandingPage() {
                   Sports Teams
                   <span style={{ display: "block", width: "50%" }}>
                     <img
-                      src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                      src={Underline1}
                       alt=""
                       // style={{ display: "block" }}
                     ></img>
@@ -279,9 +282,8 @@ export default function LandingPage() {
                 </h3>
 
                 <p className="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Sports fanatic? We've got you covered with every sports team
+                  you can think of across the globe.
                 </p>
               </div>
             </div>
@@ -313,11 +315,8 @@ export default function LandingPage() {
                   </span>
                 </h3>
                 <p className="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer. This is a longer card with supporting text below as a
-                  natural lead-in to additional content. This content is a
-                  little bit longer.
+                  Share a short bio and choose your favorites, it's as easy as
+                  that! Don't be shy, get creative with your My Top Nine wall.
                 </p>
               </div>
             </div>
@@ -342,16 +341,16 @@ export default function LandingPage() {
                   Movies
                   <span style={{ display: "block", width: "50%" }}>
                     <img
-                      src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                      src={Underline1}
                       alt=""
                       // style={{ display: "block" }}
                     ></img>
                   </span>
                 </h3>
                 <p className="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Do you love classics, horrors, action films or dramas? With
+                  our varied film collection, it's easy to find and share your
+                  favorite movie.
                 </p>
               </div>
             </div>
@@ -375,16 +374,16 @@ export default function LandingPage() {
                   TV Shows
                   <span style={{ display: "block", width: "70%" }}>
                     <img
-                      src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                      src={Underline1}
                       alt=""
                       // style={{ display: "block" }}
                     ></img>
                   </span>
                 </h3>
                 <p className="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Whether you are a hardcore Walking Dead enthusiast or a
+                  Silicon Valley geek, we have an excellent selection of old and
+                  new shows.
                 </p>
               </div>
             </div>
@@ -401,16 +400,15 @@ export default function LandingPage() {
                   Foods
                   <span style={{ display: "block", width: "50%" }}>
                     <img
-                      src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                      src={Underline1}
                       alt=""
                       // style={{ display: "block" }}
                     ></img>
                   </span>
                 </h3>
                 <p className="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Everyone loves to eat! Share your favorite cuisines with
+                  friends and see who shares similar taste.
                 </p>
               </div>
             </div>
@@ -427,16 +425,15 @@ export default function LandingPage() {
                   Friends
                   <span style={{ display: "block", width: "50%" }}>
                     <img
-                      src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                      src={Underline1}
                       alt=""
                       // style={{ display: "block" }}
                     ></img>
                   </span>
                 </h3>
                 <p className="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  We match your top choices and compare them with your friends.
+                  See who you have the most in common with!
                 </p>
               </div>
             </div>
@@ -453,16 +450,15 @@ export default function LandingPage() {
                   Destinations
                   <span style={{ display: "block", width: "60%" }}>
                     <img
-                      src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                      src={Underline1}
                       alt=""
                       // style={{ display: "block" }}
                     ></img>
                   </span>
                 </h3>
                 <p className="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Ever dream of lounging by the cabana in Cabo or taking in a
+                  scenic view of the Alps? Let your friends know!
                 </p>
               </div>
             </div>
@@ -482,16 +478,15 @@ export default function LandingPage() {
                   Villains
                   <span style={{ display: "block", width: "60%" }}>
                     <img
-                      src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                      src={Underline1}
                       alt=""
                       // style={{ display: "block" }}
                     ></img>
                   </span>
                 </h3>
                 <p className="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Do you have a dark side? Are you vengeful villain or a
+                  methodical maniac? We have them all, pick your poison.{" "}
                 </p>
               </div>
             </div>
@@ -513,16 +508,15 @@ export default function LandingPage() {
                   Video Games
                   <span style={{ display: "block", width: "80%" }}>
                     <img
-                      src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                      src={Underline1}
                       alt=""
                       // style={{ display: "block" }}
                     ></img>
                   </span>
                 </h3>
                 <p className="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Racing games, fighting games, first person shooters, role
+                  playing games... which do you prefer?
                 </p>
               </div>
             </div>
@@ -546,16 +540,15 @@ export default function LandingPage() {
                   Heros
                   <span style={{ display: "block", width: "50%" }}>
                     <img
-                      src="https://d9hhrg4mnvzow.cloudfront.net/welcome.zola.com/allproducts_desktop_ct3/1fd9wuh-invites-underline-2x_02s006021004000000.png"
+                      src={Underline1}
                       alt=""
                       // style={{ display: "block" }}
                     ></img>
                   </span>
                 </h3>
                 <p className="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  From Marvel to DC and everything in between, which caped
+                  crusader will you choose?
                 </p>
               </div>
             </div>
