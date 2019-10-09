@@ -12,7 +12,14 @@ import VillainsCat from "../images/cat13.png";
 import FriendsCat from "../images/cat16.png";
 import AvatarImg from "../images/avatar1.png";
 import SportsIcon from "../images/sportsicon.png";
+import MoviesIcon from "../images/moviesicon.png";
+import TvIcon from "../images/showsicon.png";
+import GamesIcon from "../images/gamesicon.png";
 import MusicIcon from "../images/musicicon.png";
+import HerosIcon from "../images/herosicon.png";
+import FoodsIcon from "../images/foodsicon.png";
+import VillainsIcon from "../images/villainsicon.png";
+import DestinationsIcon from "../images/destinationsicon.png";
 import CreateImg from "../images/user12.png";
 import SearchImg from "../images/user5.png";
 import AddImg from "../images/user1.png";
@@ -109,28 +116,30 @@ export default function LandingPage() {
               <img className="slideimg" src={MusicIcon} />
             </div>
             <div className="slideimg-container">
+              <img className="slideimg" src={MoviesIcon} />
+            </div>
+            <div className="slideimg-container">
+              <img className="slideimg" src={TvIcon} />
+            </div>
+
+            <div className="slideimg-container">
+              <img className="slideimg" src={DestinationsIcon} />
+            </div>
+            <div className="slideimg-container">
+              <img className="slideimg" src={FoodsIcon} />
+            </div>
+            <div className="slideimg-container">
+              <img className="slideimg" src={GamesIcon} />
+            </div>
+
+            <div className="slideimg-container">
+              <img className="slideimg" src={HerosIcon} />
+            </div>
+            <div className="slideimg-container">
+              <img className="slideimg" src={VillainsIcon} />
+            </div>
+            <div className="slideimg-container">
               <img className="slideimg" src={SportsIcon} />
-            </div>
-            <div className="slideimg-container">
-              <img className="slideimg" src={MusicIcon} />
-            </div>
-            <div className="slideimg-container">
-              <img className="slideimg" src={SportsIcon} />
-            </div>
-            <div className="slideimg-container">
-              <img className="slideimg" src={MusicIcon} />
-            </div>
-            <div className="slideimg-container">
-              <img className="slideimg" src={SportsIcon} />
-            </div>
-            <div className="slideimg-container">
-              <img className="slideimg" src={MusicIcon} />
-            </div>
-            <div className="slideimg-container">
-              <img className="slideimg" src={MusicIcon} />
-            </div>
-            <div className="slideimg-container">
-              <img className="slideimg" src={MusicIcon} />
             </div>
           </Carousel>
           <div className="banner-two"></div>

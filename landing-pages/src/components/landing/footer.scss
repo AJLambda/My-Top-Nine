@@ -88,8 +88,13 @@ footer {
         // text-transform: capitalize;
       }
 
-      .button {
-        display: inline-block;
+      .register-btn {
+        font-weight: bold;
+        font-family: "Nunito";
+        /* letter-spacing: .04em; */
+        /* text-transform: capitalize; */
+        background-color: firebrick;
+        color: white;
       }
     }
 

@@ -9,6 +9,10 @@ import {
   InputGroup,
   FormControl
 } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "../landing/landing.scss";
 
 class Footer extends React.Component {
@@ -36,9 +40,30 @@ class Footer extends React.Component {
               <h4>Connect</h4>
               <ul>
                 <li>Contact Us</li>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
+                <li>
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    size={"xs"}
+                    style={{ marginRight: "3px" }}
+                  />
+                  Twitter
+                </li>
+                <li style={{ fontSize: "13px" }}>
+                  <FontAwesomeIcon
+                    icon={faFacebookF}
+                    size={"xs"}
+                    style={{ marginRight: "6px", marginLeft: "1px" }}
+                  />
+                  Facebook
+                </li>
+                <li>
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    size={"xs"}
+                    style={{ marginRight: "5px" }}
+                  />
+                  Instagram
+                </li>
               </ul>
             </div>
           </div>
@@ -54,7 +79,13 @@ class Footer extends React.Component {
                 id="email"
               />
               <InputGroup.Append>
-                <Button variant="outline-secondary">Register</Button>
+                <Button
+                  className="register-btn"
+                  variant="outline-secondary"
+                  style={{ backgroundColor: "firebrick", color: "white" }}
+                >
+                  REGISTER
+                </Button>
               </InputGroup.Append>
             </InputGroup>
           </div>
@@ -68,7 +99,7 @@ class Footer extends React.Component {
           <div className="footer-bottom-right">
             <a>Terms</a>
             <a>Privacy</a>
-            <a></a>
+            <a>Security</a>
           </div>
         </div>
       </footer>
