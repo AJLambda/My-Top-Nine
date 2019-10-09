@@ -49,8 +49,8 @@
   }
 
   .top-circle {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     background: $snow;
     margin: 0 auto;
     padding: 20px;
@@ -59,8 +59,8 @@
 
   .top-img {
     // margin-top: 10px;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 
   .top-title {
@@ -144,4 +144,16 @@
       border-radius: 5px;
     }
   }
+}
+
+#create-img {
+  margin-top: 5px;
+}
+#search-img {
+}
+#add-img {
+  margin-top: 3px;
+}
+#share-img {
+  margin-top: -2px;
 }

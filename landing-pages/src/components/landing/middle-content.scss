@@ -33,16 +33,16 @@
     margin-left: -10px;
     margin-right: -10px;
 
-    background: rgb(56, 136, 167);
-    background: linear-gradient(
-      90deg,
-      rgba(56, 136, 167, 1) 0%,
-      rgba(56, 136, 167, 1) 6%,
-      rgba(211, 224, 232, 1) 21%,
-      rgba(211, 224, 232, 1) 79%,
-      rgba(56, 136, 167, 1) 94%,
-      rgba(56, 136, 167, 1) 100%
-    );
+    background: $blue;
+    // background: linear-gradient(
+    //   90deg,
+    //   rgba(56, 136, 167, 1) 0%,
+    //   rgba(56, 136, 167, 1) 6%,
+    //   rgba(211, 224, 232, 1) 21%,
+    //   rgba(211, 224, 232, 1) 79%,
+    //   rgba(56, 136, 167, 1) 94%,
+    //   rgba(56, 136, 167, 1) 100%
+    // );
     position: relative;
     top: 20px;
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
@@ -83,8 +83,8 @@
     // z-index: 5;
 
     .shadow-box {
-      border-top: 1.5px dashed white;
-      border-bottom: 1.5px dashed white;
+      border-top: 3px dashed white;
+      border-bottom: 3px dashed white;
       height: 100%;
     }
 
@@ -103,23 +103,36 @@
     span {
       color: $red;
     }
-    h2 {
-      // font-family: "Nunito", sans-serif;
-      font-family: "friday";
-      // font-weight: bold;
-      border-radius: 5px;
+    // h2 {
+    //   // font-family: "Nunito", sans-serif;
+    //   font-family: "friday";
+    //   // font-weight: bold;
+    //   border-radius: 5px;
 
+    //   padding: 15px;
+    //   margin: 0 auto;
+    //   // width: 50%;
+    //   // background: white;
+    //   text-align: center;
+    //   // font-family: "Nunito", sans-serif;
+    //   // font-weight: bold;
+    //   font-size: 50px;
+    //   color: $blue;
+    //   // padding: 20px;
+    //   text-align: center;
+    // }
+    h2 {
+      color: snow;
+      font-family: "Nunito";
+      /* font-family: "friday"; */
+      border-radius: 5px;
       padding: 15px;
       margin: 0 auto;
-      // width: 50%;
-      // background: white;
       text-align: center;
-      // font-family: "Nunito", sans-serif;
-      // font-weight: bold;
-      font-size: 50px;
-      color: $blue;
-      // padding: 20px;
+      font-size: 4.8rem;
+      color: snow;
       text-align: center;
+      font-weight: bold;
     }
 
     .middle-underline {
@@ -303,7 +316,7 @@
 }
 
 .profileimg-wrapper {
-  background: #4b88a2;
+  background: $blue;
   width: 100%;
   box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
 }

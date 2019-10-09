@@ -20,10 +20,10 @@ import HerosIcon from "../images/herosicon.png";
 import FoodsIcon from "../images/foodsicon.png";
 import VillainsIcon from "../images/villainsicon.png";
 import DestinationsIcon from "../images/destinationsicon.png";
-import CreateImg from "../images/user12.png";
-import SearchImg from "../images/user5.png";
-import AddImg from "../images/user1.png";
-import ShareImg from "../images/user6.png";
+import CreateImg from "../images/create3.png";
+import SearchImg from "../images/choose3.png";
+import AddImg from "../images/add2.png";
+import ShareImg from "../images/share2.png";
 import QuoteImg1 from "../images/quoteimg1.png";
 import QuoteImg2 from "../images/quoteimg2.png";
 import QuoteImg3 from "../images/quoteimg3.png";
@@ -156,7 +156,12 @@ export default function LandingPage() {
             <div className="content-box">
               <div className="top-circle">
                 <span>
-                  <img className="top-img" src={CreateImg} alt="" />
+                  <img
+                    className="top-img"
+                    id="create-img"
+                    src={CreateImg}
+                    alt=""
+                  />
                 </span>
               </div>
               <div className="top-title">Create</div>
@@ -168,7 +173,12 @@ export default function LandingPage() {
             <div className="content-box">
               <div className="top-circle">
                 <span>
-                  <img className="top-img" src={SearchImg} alt="" />
+                  <img
+                    className="top-img"
+                    id="search-img"
+                    src={SearchImg}
+                    alt=""
+                  />
                 </span>
               </div>
               <div className="top-title">Choose</div>
@@ -181,7 +191,7 @@ export default function LandingPage() {
             <div className="content-box">
               <div className="top-circle">
                 <span>
-                  <img className="top-img" src={AddImg} alt="" />
+                  <img className="top-img" id="add-img" src={AddImg} alt="" />
                 </span>
               </div>
               <div className="top-title">Add</div>
@@ -192,7 +202,12 @@ export default function LandingPage() {
             <div className="content-box">
               <div className="top-circle">
                 <span>
-                  <img className="top-img" src={ShareImg} alt="" />
+                  <img
+                    className="top-img"
+                    id="share-img"
+                    src={ShareImg}
+                    alt=""
+                  />
                 </span>
               </div>
               <div className="top-title">Share</div>
@@ -348,9 +363,8 @@ export default function LandingPage() {
                   </span>
                 </h3>
                 <p className="card-text">
-                  Do you love classics, horrors, action films or dramas? With
-                  our varied film collection, it's easy to find and share your
-                  favorite movie.
+                  Choose from a huge list of action films, comedies, horrors,
+                  dramas and classics and share your favorite film!
                 </p>
               </div>
             </div>
@@ -381,9 +395,8 @@ export default function LandingPage() {
                   </span>
                 </h3>
                 <p className="card-text">
-                  Whether you are a hardcore Walking Dead enthusiast or a
-                  Silicon Valley geek, we have an excellent selection of old and
-                  new shows.
+                  Walking Dead zombie-lovers, Silicon Valley geeks, Game of
+                  Thrones binge-watchers... which are you?
                 </p>
               </div>
             </div>
@@ -581,11 +594,11 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="bottom-container">
-            <h4 className="bottom-title">"Who's Using It?"</h4>
+            <h4 className="bottom-title">Who's Using It?</h4>
             <div className="bottom-text">
               <h5>
-                My Top Nine is used by people like you across the globe. Here's
-                what a few had to say:
+                My Top Nine is used by <span>people like you</span> across the
+                globe. Here's what a few had to say:
               </h5>
             </div>
             <div className="quotes-container">

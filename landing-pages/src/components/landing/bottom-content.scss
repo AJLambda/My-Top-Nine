@@ -84,14 +84,15 @@
   }
 
   .bottom-title {
-    color: #4b88a2;
-    font-size: 30px;
+    color: black;
+    font-size: 3.5rem;
     padding: 20px;
   }
 
   .bottom-text h5 {
     font-size: 16px;
     padding-left: 15%;
+    padding-bottom: 20px;
     padding-right: 15%;
   }
 
@@ -119,7 +120,7 @@
     }
 
     .bottom-name {
-      color: grey;
+      color: $blue;
       margin-left: 15px;
       font-size: 16px;
       font-weight: bold;
