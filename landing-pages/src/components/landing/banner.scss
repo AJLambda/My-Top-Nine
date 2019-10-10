@@ -2,7 +2,6 @@
   background: #fbf9f8;
   padding-bottom: 30px;
   padding-top: 10px;
-  // height: 400px;
   display: flex;
   flex-direction: column;
   height: 70%;
@@ -17,29 +16,16 @@
     position: relative;
     z-index: 1;
 
-    // .banner-title {
-    //   color: #4b88a2;
-    //   font-size: 30px;
-    // }
-
     h2 {
-      // color: #000;
       color: rgb(33, 32, 31);
       font-size: 3.5rem;
     }
 
-    // br {
-    //   line-height: 2.6rem;
-    // }
-
     .banner-text {
-      // text-align: center;
-      // color: grey;
       color: #000;
       font-size: 16px;
       line-height: 2.6rem;
       padding-top: 20px;
-      // padding: 20px 20% 10px 20%;
 
       span {
         font-weight: bold;
@@ -52,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    // background-image: url("../images/white-waves.png");
+
     .banner-img {
       width: 90px;
       height: 90px;
@@ -63,53 +49,29 @@
     height: 150px;
     padding: 70px 0;
   }
-
-  // h2 {
-  //   color: $white;
-  //   text-align: center;
-  //   font-size: 3rem;
-  //   font-family: "Nunito", sans-serif;
-
-  //   @media (max-width: $mobile) {
-  //     font-size: 3rem;
-  //   }
-  // }
 }
 
 // Carousel
 
 .banner-carousel {
   margin: 0px auto 50px auto;
-  // background: whitesmoke;
   overflow: visible;
-  // padding: 30px !important;
 
   .slideimg-container {
-    // background: white;
     padding-bottom: 30px;
   }
 
-  // .slideimg {
-  //   height: 150px;
-  //   width: 150px;
-  // }
-
   .slide {
-    // &:hover {
-    //   cursor: pointer;
-    // }
     margin-bottom: 40px !important;
+    height: 160px;
+    width: 160px;
+
     style {
       min-width: 50%;
     }
-    height: 160px;
-    width: 160px;
-  }
-
-  li.slide {
-    // background: whitesmoke;
   }
 }
+
 li {
   background-color: transparent;
 }
@@ -120,24 +82,12 @@ li {
 
 ul.control-dots {
   margin-top: 30px !important;
-  // margin-left: 20px !important;
 }
 
 li.slide.selected {
   margin-top: -20px !important;
-  // transition: width 2s, height 4s;
-  // min-width: 36% !important;
-
-  // height: 300px !important;
-  // min-width: 35% !important;
-  // height: 20px;
 }
 
 .slider-wrapper {
   padding-top: 20px;
 }
-
-// .banner-two {
-//   height: 250px;
-//   background: url("../images/brickwall.png");
-// }

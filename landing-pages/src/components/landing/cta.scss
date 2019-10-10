@@ -8,11 +8,6 @@
   background-repeat: no-repeat;
   background-color: #fbf9f8;
 
-  // border-bottom: 3px solid white;
-
-  // position: relative;
-  // z-index: 1;
-
   .cta-box {
     width: 100%;
   }
@@ -22,16 +17,11 @@
   }
 
   h1 {
-    // padding-top: 40px;
     font-family: "Nunito";
-    // background: #fbf9f8;
     color: $black;
-    // font-weight: bold;
     font-size: 3.8rem;
-    // font-weight: 400;
     position: absolute;
     text-align: center;
-    // text-shadow: 2px 2px 3px;
     top: 19%;
     left: 51%;
     transform: translateX(-50%) translateY(-50%);
@@ -50,59 +40,19 @@
 
   .cta-btn1 {
     text-transform: uppercase;
-    // margin-top: 300px;
-    // margin: 370px auto 0 auto;
     height: 45px;
     width: 175px;
-    // padding: 0.8% 3.5%;
-    // width: 15;
     background: firebrick;
-    // opacity: 0.9;
     color: $white;
     font-size: 1.6rem;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     position: absolute;
     text-align: center;
-    // // margin-top: 80px;
-    // align-self: flex-end;
     bottom: 3%;
     right: 43%;
-    // transform: translateX(-50%) translateY(-50%);
     border: none;
     border-radius: 5px;
-
-    // span {
-    //   cursor: pointer;
-    //   display: inline-block;
-    //   position: relative;
-    //   transition: 0.5s;
-    // }
-
-    // span:after {
-    //   content: ":)";
-    //   position: absolute;
-    //   opacity: 0;
-    //   top: 0;
-    //   right: -20px;
-    //   transition: 0.5s;
-    // }
-
-    // &:hover {
-    //   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.48),
-    //     0 20px 50px 0 rgba(0, 0, 0, 0.36);
-    //   background: $blue;
-    //   cursor: pointer;
-
-    //   span {
-    //     padding-right: 25px;
-    //   }
-
-    //   span:after {
-    //     opacity: 1;
-    //     right: 1;
-    //   }
-    // }
 
     @media (max-width: $mobile) {
       display: none;

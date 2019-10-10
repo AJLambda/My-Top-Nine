@@ -1,36 +1,15 @@
 .top-content {
   background-color: white;
   padding-bottom: 30px;
-  // // margin: 5%;
-  // // padding-left: 5%;
-  // // background-image: linear-gradient(rgb(37, 38, 39), rgb(233, 236, 239));
-  // // background-image: url("../images/middleimg.jpg");
-  // display: grid;
-  // grid-template-columns: 1fr 1fr 1fr 1fr;
-  // // flex-direction: row;
-  // // justify-content: space-between;
-  // align-items: center;
-  // height: 250px;
-  // box-shadow: 0 5px 3px 0px rgba(0, 0, 0, 0.2);
-
   position: relative;
   z-index: 1;
 
   .top-wrapper {
     padding: 5%;
     background-color: white;
-    // margin: 5%;
-    // padding-left: 5%;
-    // background-image: linear-gradient(rgb(37, 38, 39), rgb(233, 236, 239));
-    // background-image: url("../images/middleimg.jpg");
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    // flex-direction: row;
-    // justify-content: space-between;
     align-items: center;
-    // height: 250px;
-    // box-shadow: 0 5px 3px 0px rgba(0, 0, 0, 0.2);
-
     position: relative;
     z-index: 1;
   }
@@ -58,7 +37,6 @@
   }
 
   .top-img {
-    // margin-top: 10px;
     width: 80px;
     height: 80px;
   }
@@ -66,9 +44,7 @@
   .top-title {
     padding-top: 20px;
     font-family: "ProximaBold";
-    // color: $red;
     font-size: 25px;
-    // margin: 15px 0 15px 0;
   }
 
   .top-text {
@@ -82,9 +58,6 @@
     .underline2 {
       display: inline-block;
       padding-bottom: 3px;
-
-      // text-decoration: underline;
-      // position: relative;
       background: url("../images/underline2.png");
       background-position: bottom;
       background-repeat: no-repeat;
@@ -93,9 +66,6 @@
     .underline3 {
       display: inline-block;
       padding-bottom: 3px;
-
-      // text-decoration: underline;
-      // position: relative;
       background: url("../images/underline3.png");
       background-position: bottom;
       background-repeat: no-repeat;
@@ -104,9 +74,6 @@
     .underline4 {
       display: inline-block;
       padding-bottom: 3px;
-
-      // text-decoration: underline;
-      // position: relative;
       background: url("../images/underline4.png");
       background-position: bottom;
       background-repeat: no-repeat;
@@ -119,27 +86,16 @@
     margin-top: 20px;
     .top-btn1 {
       text-transform: uppercase;
-      // margin-top: 300px;
-      // margin: 370px auto 0 auto;
       width: 250px;
       height: 60px;
-
       padding: 1.2% 3.5%;
-      // width: 15;
       background: firebrick;
-      // opacity: 0.9;
       color: $white;
       font-size: 1.6rem;
       font-family: "Nunito", sans-serif;
       font-weight: bold;
-      // position: absolute;
       text-align: center;
-      // // margin-top: 80px;
-      // align-self: flex-end;
-      // bottom: 3%;
-      // right: 44%;
       margin: 0 auto;
-      // transform: translateX(-50%) translateY(-50%);
       border: none;
       border-radius: 5px;
     }
@@ -149,8 +105,7 @@
 #create-img {
   margin-top: 5px;
 }
-#search-img {
-}
+
 #add-img {
   margin-top: 3px;
 }

@@ -1,9 +1,4 @@
 .bottom-content {
-  // .bottom-btn {
-  //   text-align: center;
-  //   margin-top: 20%;
-  // }
-
   .underline2 {
     background: url("../images/underline6.png");
     background-position: bottom;
@@ -17,36 +12,25 @@
     padding: 40px;
     text-align: center;
     font-size: 25px;
-    // height: 300px;
+
     width: 100%;
 
     text-align: center;
     box-shadow: 0 5px 3px 0px rgba(0, 0, 0, 0.2);
-    // position: relative;
-    // z-index: 5;
 
     h2 {
-      // font-family: "Sakura", serif !important;
       font-family: "friday";
-      // font-weight: lighter;
-
       border-radius: 5px;
       padding: 10px;
       margin: 0 auto;
-      // width: 50%;
-      // background: white;
       text-align: center;
-      // font-family: "Nunito", sans-serif;
-
       font-size: 60px;
       color: $snow;
-      // padding: 20px;
       text-align: center;
     }
   }
 
   .bottom-container {
-    // height: 35px;
     background: white;
     padding: 5% 8%;
   }
@@ -58,28 +42,16 @@
 
   .bottom-btn1 {
     text-transform: uppercase;
-    // margin-top: 300px;
-    // margin: 370px auto 0 auto;
     height: 45px;
     width: 250px;
-    // padding: 15px;
-    // width: 15;
     background: firebrick;
-    // opacity: 0.9;
     color: $white;
     font-size: 1.6rem;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
-
     text-align: center;
-    // // margin-top: 80px;
-    // align-self: flex-end;
-
-    // transform: translateX(-50%) translateY(-50%);
     border: none;
     border-radius: 5px;
-
-    // .button-maker(@white, @blue);
 
     @media (max-width: $mobile) {
       padding: 10px 100px;
@@ -107,7 +79,6 @@
   .quotes-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* justify-content: space-between; */
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -135,7 +106,6 @@
     .bottom-img {
       width: 50px;
       height: 50px;
-      /* margin: 1em auto; */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;

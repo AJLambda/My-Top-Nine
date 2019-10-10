@@ -6,13 +6,11 @@
   padding-bottom: 40px;
 
   .ribbon {
-    // padding: 20px;
     height: 120px;
     position: relative;
     margin-bottom: 30px;
     background: white;
     background-size: cover;
-    // text-transform: uppercase;
     color: white;
   }
 
@@ -26,17 +24,7 @@
     text-align: center;
     margin-left: -10px;
     margin-right: -10px;
-
     background: $blue;
-    // background: linear-gradient(
-    //   90deg,
-    //   rgba(56, 136, 167, 1) 0%,
-    //   rgba(56, 136, 167, 1) 6%,
-    //   rgba(211, 224, 232, 1) 21%,
-    //   rgba(211, 224, 232, 1) 79%,
-    //   rgba(56, 136, 167, 1) 94%,
-    //   rgba(56, 136, 167, 1) 100%
-    // );
     position: relative;
     top: 20px;
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
@@ -66,15 +54,9 @@
   .middle-header {
     position: relative;
     background: $light-blue;
-
-    // padding: 40px;
     text-align: center;
     font-size: 25px;
-
     text-align: center;
-    // box-shadow: 0 5px 3px 0px rgba(0, 0, 0, 0.2);
-    // position: relative;
-    // z-index: 5;
 
     .shadow-box {
       border-top: 3px dashed white;
@@ -84,10 +66,6 @@
 
     .shadow-box .content {
       margin: 0 auto;
-      // letter-spacing: -5px;
-      // display: table-cell;
-      // vertical-align: middle;
-      // padding: 20px;
       font-weight: bold;
       height: 100%;
       font-size: 3em;
@@ -97,28 +75,10 @@
     span {
       color: $red;
     }
-    // h2 {
-    //   // font-family: "Nunito", sans-serif;
-    //   font-family: "friday";
-    //   // font-weight: bold;
-    //   border-radius: 5px;
 
-    //   padding: 15px;
-    //   margin: 0 auto;
-    //   // width: 50%;
-    //   // background: white;
-    //   text-align: center;
-    //   // font-family: "Nunito", sans-serif;
-    //   // font-weight: bold;
-    //   font-size: 50px;
-    //   color: $blue;
-    //   // padding: 20px;
-    //   text-align: center;
-    // }
     h2 {
       color: snow;
       font-family: "Nunito";
-      /* font-family: "friday"; */
       border-radius: 5px;
       padding: 15px;
       margin: 0 auto;
@@ -140,7 +100,6 @@
     h3 {
       margin-top: 10px;
       margin-bottom: 10px;
-      // font-size: 20px;
       color: rgb(80, 80, 80);
     }
   }
@@ -148,10 +107,8 @@
   .card-container {
     width: 90%;
     margin: 80px auto;
-
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    // grid-template-rows: auto;
 
     grid-template-areas:
       "one two three four"
@@ -160,17 +117,12 @@
       "nine ten ten eleven"
       "nine ten ten five"
       "eight seven six five";
-
-    // margin: 20px;
-    // column-gap: 2%;
-    // row-gap: 3%;
   }
 
   .card {
     margin: 7%;
     border-radius: 3px;
     box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
-    // max-height: 400px;
 
     .logo-span {
       padding: 10px;
@@ -187,15 +139,9 @@
 
     .card-title span {
       margin: -8px auto auto auto;
-
-      // img {
-      //   width: 30px;
-      //   width: 30px;
-      // }
     }
 
     h3 {
-      // color: $red;
       text-decoration: none;
     }
 
@@ -306,23 +252,20 @@
     font-weight: bold;
     color: $red;
     font-family: "Nunito", sans-serif;
-    // font-weight: bold;
   }
 }
+
 #profileimg {
   width: 130px;
   height: 130px;
 }
 
 .profileimg-wrapper {
-  // padding: 10px;
   background: $blue;
   width: 100%;
   box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .img-wrapper {
-  // background: $light-gray;
   width: 100%;
-  // box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
 }

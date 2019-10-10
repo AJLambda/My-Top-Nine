@@ -38,7 +38,6 @@
         height: 100px;
         top: -20px;
         left: -15px;
-        /* top: 0px !important; */
         z-index: -1;
       }
     }
@@ -51,9 +50,4 @@
   .underline-logo {
     display: none;
   }
-
-  // &:hover {
-  //   color: firebrick;
-  //   position: relative;
-  // }
 }

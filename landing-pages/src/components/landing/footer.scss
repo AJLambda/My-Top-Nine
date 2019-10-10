@@ -6,7 +6,6 @@ footer {
   .footer-bottom {
     padding: 2% 5% 2% 5%;
     color: black;
-    // height: 40px;
     background: $blue;
     display: flex;
 
@@ -29,9 +28,7 @@ footer {
   .footer-top {
     display: flex;
     flex-direction: row;
-
     background: white;
-    // background: #F8E7E2;
     font-size: 1.3rem;
     width: 100%;
     padding: 5%;
@@ -49,24 +46,18 @@ footer {
       justify-self: flex-start;
     }
 
-    // height: 10vh;
-
     .footer-top-left {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-
       text-align: center;
       padding-top: 20px;
       padding-bottom: 20px;
       width: 50%;
-      // margin-right: 10%;
     }
     .footer-top-right {
       display: flex;
       flex-direction: column;
-      /* justify-content: center; */
-      // align-items: center;
       width: 50%;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -85,14 +76,11 @@ footer {
       input {
         text-align: left;
         align-self: flex-start;
-        // text-transform: capitalize;
       }
 
       .register-btn {
         font-weight: bold;
         font-family: "Nunito";
-        /* letter-spacing: .04em; */
-        /* text-transform: capitalize; */
         background-color: firebrick;
         color: white;
       }
