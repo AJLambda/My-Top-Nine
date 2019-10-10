@@ -4,7 +4,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavLogo from "../images/logo.png";
+import NavLogo from "../images/logo5.png";
 import Underline6 from "../images/underline6.png";
 import { makeStyles } from "@material-ui/core/styles";
 import Fab from "@material-ui/core/Fab";
@@ -67,8 +67,8 @@ export default function Navigation() {
         <Navbar.Brand href="#">
           <img
             src={NavLogo}
-            width="40"
-            height="40"
+            width="70"
+            height="70"
             className="d-inline-block align-bottom"
             alt="React Bootstrap logo"
           />
@@ -114,7 +114,7 @@ export default function Navigation() {
                 // href="#outlined-buttons"
                 className={classes.button}
               >
-                What is it
+                intro
               </Button>
             </Link>
             <Link

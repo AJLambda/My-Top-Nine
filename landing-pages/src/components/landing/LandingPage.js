@@ -658,7 +658,8 @@ export default function LandingPage() {
                 <h5>
                   "In a world with a million different social apps it's funny
                   how little we actually know about each other. My Top Nine is a
-                  great icebreaker to get to know what people really like."
+                  great icebreaker to get to know what people really like. It's
+                  really helped my social life!"
                 </h5>
                 <div className="info-wrapper">
                   <img
