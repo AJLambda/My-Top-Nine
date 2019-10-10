@@ -114,6 +114,16 @@
     .bottom-quotes {
       text-align: left;
       padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: left;
+      padding: 10px;
+
+      h5 {
+        font-family: "Proxima";
+        font-size: 14px;
+      }
     }
 
     .info-wrapper {

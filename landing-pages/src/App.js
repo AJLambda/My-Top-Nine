@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import LandingPage from "./components/landing/LandingPage";
 
@@ -13,7 +12,6 @@ function App() {
       <Navigation />
 
       <Route exact path="/" render={props => <LandingPage {...props} />} />
-      {/* <Route exact path="/about" render={props => <About {...props} />} /> */}
     </div>
   );
 }

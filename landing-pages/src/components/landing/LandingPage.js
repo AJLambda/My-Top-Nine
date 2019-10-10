@@ -29,23 +29,13 @@ import QuoteImg1 from "../images/quoteimg1.png";
 import QuoteImg2 from "../images/quoteimg2.png";
 import QuoteImg3 from "../images/quoteimg3.png";
 import Underline1 from "../images/underline1.png";
-import Underline3 from "../images/underline3.png";
 import Logo from "../images/logo.png";
 import { makeStyles } from "@material-ui/core/styles";
-import Fab from "@material-ui/core/Fab";
 import Button from "@material-ui/core/Button";
 import "../landing/landing.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
+import { Element } from "react-scroll";
 
 const useStyles = makeStyles(theme => ({
   topBtn: {
@@ -58,6 +48,12 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "#bb0a21",
     "&:hover": {
       backgroundColor: "#A3091D"
+    },
+    "&:visited": {
+      color: "#fbf9f8"
+    },
+    "&:active": {
+      color: "#fbf9f8"
     },
     margin: theme.spacing(1)
   }
@@ -74,21 +70,6 @@ export default function LandingPage() {
             <h1 id="ctaHeading">
               Share your <span>top nine</span> with friends.
             </h1>
-
-            {/* <div className="cta-btn">
-                <button className="cta-btn1">
-                  <a href="https://my-top-nine-logan.netlify.com/">
-                    <span>Sign Up</span>
-                  </a>
-                </button>
-              </div> */}
-            <div className="cta-btn-mobile">
-              <button className="cta-btn2">
-                <a href="https://my-top-nine-logan.netlify.com/">
-                  Get Started!
-                </a>
-              </button>
-            </div>
           </div>
         </section>
 
@@ -111,7 +92,6 @@ export default function LandingPage() {
 
             <Carousel
               autoPlay
-              // dynamicHeight={true}
               infiniteLoop
               showArrows={false}
               interval={3000}
@@ -123,37 +103,43 @@ export default function LandingPage() {
               centerMode
               centerSlidePercentage={33}
               className="banner-carousel"
-
-              // transitionTime={100}
             >
               <div className="slideimg-container">
-                <img className="slideimg" src={MusicIcon} />
+                <img className="slideimg" src={MusicIcon} alt="Music Icon" />
               </div>
               <div className="slideimg-container">
-                <img className="slideimg" src={MoviesIcon} />
+                <img className="slideimg" src={MoviesIcon} alt="Movies Icon" />
               </div>
               <div className="slideimg-container">
-                <img className="slideimg" src={TvIcon} />
-              </div>
-
-              <div className="slideimg-container">
-                <img className="slideimg" src={DestinationsIcon} />
-              </div>
-              <div className="slideimg-container">
-                <img className="slideimg" src={FoodsIcon} />
-              </div>
-              <div className="slideimg-container">
-                <img className="slideimg" src={GamesIcon} />
+                <img className="slideimg" src={TvIcon} alt="Tv Icon" />
               </div>
 
               <div className="slideimg-container">
-                <img className="slideimg" src={HerosIcon} />
+                <img
+                  className="slideimg"
+                  src={DestinationsIcon}
+                  alt="DesinationsIcon"
+                />
               </div>
               <div className="slideimg-container">
-                <img className="slideimg" src={VillainsIcon} />
+                <img className="slideimg" src={FoodsIcon} alt="Foods Icon" />
               </div>
               <div className="slideimg-container">
-                <img className="slideimg" src={SportsIcon} />
+                <img className="slideimg" src={GamesIcon} alt="Games Icon" />
+              </div>
+
+              <div className="slideimg-container">
+                <img className="slideimg" src={HerosIcon} alt="Heros Icon" />
+              </div>
+              <div className="slideimg-container">
+                <img
+                  className="slideimg"
+                  src={VillainsIcon}
+                  alt="Villains Icon"
+                />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={SportsIcon} alt="Sports Icon" />
               </div>
             </Carousel>
             <div className="banner-two"></div>
@@ -237,6 +223,7 @@ export default function LandingPage() {
                 color="primary"
                 aria-label="add"
                 className={classes.topBtn}
+                href="https://my-top-nine-logan.netlify.com/"
               >
                 GET STARTED
               </Button>
@@ -257,33 +244,18 @@ export default function LandingPage() {
                   </div>
                 </span>
               </div>
-
-              {/* <div className="middle-title">
-                <h3>
-                  Create and customize your wall and see which friends share
-                  similar taste!
-                </h3>
-              </div> */}
             </div>
 
             <div className="card-container">
               <div className="card" style={{ gridArea: "one" }}>
                 <div className="img-wrapper">
-                  <img
-                    className="card-img-top"
-                    src={MusicCat}
-                    alt="Card image cap"
-                  />
+                  <img className="card-img-top" src={MusicCat} alt="Card cap" />
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
                     Music Artists
                     <span style={{ display: "block", width: "70%" }}>
-                      <img
-                        src={Underline1}
-                        alt=""
-                        // style={{ display: "block" }}
-                      ></img>
+                      <img src={Underline1} alt=""></img>
                     </span>
                   </h3>
                   <p className="card-text">
@@ -297,24 +269,20 @@ export default function LandingPage() {
                   <img
                     className="card-img-top"
                     src={SportsCat}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
                     Sports Teams
                     <span style={{ display: "block", width: "50%" }}>
-                      <img
-                        src={Underline1}
-                        alt=""
-                        // style={{ display: "block" }}
-                      ></img>
+                      <img src={Underline1} alt=""></img>
                     </span>
                   </h3>
 
                   <p className="card-text">
                     Sports fanatic? We've got you covered with every sports team
-                    you can think of across the globe.
+                    you can think of across the world.
                   </p>
                 </div>
               </div>
@@ -332,7 +300,7 @@ export default function LandingPage() {
                     id="profileimg"
                     className="card-img-top"
                     src={AvatarImg}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                 </div>
                 <div className="card-body">
@@ -364,18 +332,14 @@ export default function LandingPage() {
                   <img
                     className="card-img-top"
                     src={MoviesCat}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
                     Movies
                     <span style={{ display: "block", width: "50%" }}>
-                      <img
-                        src={Underline1}
-                        alt=""
-                        // style={{ display: "block" }}
-                      ></img>
+                      <img src={Underline1} alt=""></img>
                     </span>
                   </h3>
                   <p className="card-text">
@@ -393,21 +357,13 @@ export default function LandingPage() {
                 }}
               >
                 <div className="img-wrapper">
-                  <img
-                    className="card-img-top"
-                    src={TvCat}
-                    alt="Card image cap"
-                  />
+                  <img className="card-img-top" src={TvCat} alt="Card cap" />
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
                     TV Shows
                     <span style={{ display: "block", width: "70%" }}>
-                      <img
-                        src={Underline1}
-                        alt=""
-                        // style={{ display: "block" }}
-                      ></img>
+                      <img src={Underline1} alt=""></img>
                     </span>
                   </h3>
                   <p className="card-text">
@@ -418,21 +374,13 @@ export default function LandingPage() {
               </div>
               <div className="card" style={{ gridArea: "five" }}>
                 <div className="img-wrapper">
-                  <img
-                    className="card-img-top"
-                    src={FoodsCat}
-                    alt="Card image cap"
-                  />
+                  <img className="card-img-top" src={FoodsCat} alt="Card cap" />
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
                     Foods
                     <span style={{ display: "block", width: "50%" }}>
-                      <img
-                        src={Underline1}
-                        alt=""
-                        // style={{ display: "block" }}
-                      ></img>
+                      <img src={Underline1} alt=""></img>
                     </span>
                   </h3>
                   <p className="card-text">
@@ -446,18 +394,14 @@ export default function LandingPage() {
                   <img
                     className="card-img-top"
                     src={FriendsCat}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
                     Friends
                     <span style={{ display: "block", width: "50%" }}>
-                      <img
-                        src={Underline1}
-                        alt=""
-                        // style={{ display: "block" }}
-                      ></img>
+                      <img src={Underline1} alt=""></img>
                     </span>
                   </h3>
                   <p className="card-text">
@@ -471,18 +415,14 @@ export default function LandingPage() {
                   <img
                     className="card-img-top"
                     src={DestinationsCat}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
                     Destinations
                     <span style={{ display: "block", width: "60%" }}>
-                      <img
-                        src={Underline1}
-                        alt=""
-                        // style={{ display: "block" }}
-                      ></img>
+                      <img src={Underline1} alt=""></img>
                     </span>
                   </h3>
                   <p className="card-text">
@@ -499,18 +439,14 @@ export default function LandingPage() {
                   <img
                     className="card-img-top"
                     src={VillainsCat}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
                     Villains
                     <span style={{ display: "block", width: "60%" }}>
-                      <img
-                        src={Underline1}
-                        alt=""
-                        // style={{ display: "block" }}
-                      ></img>
+                      <img src={Underline1} alt=""></img>
                     </span>
                   </h3>
                   <p className="card-text">
@@ -529,18 +465,14 @@ export default function LandingPage() {
                   <img
                     className="card-img-top"
                     src={VideoGamesCat}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
                     Video Games
                     <span style={{ display: "block", width: "80%" }}>
-                      <img
-                        src={Underline1}
-                        alt=""
-                        // style={{ display: "block" }}
-                      ></img>
+                      <img src={Underline1} alt=""></img>
                     </span>
                   </h3>
                   <p className="card-text">
@@ -558,21 +490,13 @@ export default function LandingPage() {
                 }}
               >
                 <div className="img-wrapper">
-                  <img
-                    className="card-img-top"
-                    src={HerosCat}
-                    alt="Card image cap"
-                  />
+                  <img className="card-img-top" src={HerosCat} alt="Card cap" />
                 </div>
                 <div className="card-body">
                   <h3 className="card-title">
                     Heros
                     <span style={{ display: "block", width: "50%" }}>
-                      <img
-                        src={Underline1}
-                        alt=""
-                        // style={{ display: "block" }}
-                      ></img>
+                      <img src={Underline1} alt=""></img>
                     </span>
                   </h3>
                   <p className="card-text">
@@ -582,16 +506,6 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            {/* <div className="bottom-btn">
-              <button className="bottom-btn1">
-                <a
-                  href="https://my-top-nine-logan.netlify.com/"
-                  target="_blank"
-                >
-                  Sign Up
-                </a>
-              </button>
-            </div> */}
           </section>
         </Element>
 
@@ -608,6 +522,7 @@ export default function LandingPage() {
                 color="primary"
                 aria-label="add"
                 className={classes.topBtn}
+                href="https://my-top-nine-logan.netlify.com/"
               >
                 CREATE YOUR WALL
               </Button>
@@ -618,7 +533,9 @@ export default function LandingPage() {
             <div className="bottom-text">
               <h5>
                 My Top Nine is used by <span>people like you</span> across the
-                globe. Here's what a few had to say:
+                globe.
+                <br />
+                Here's what a few had to say:
               </h5>
             </div>
             <div className="quotes-container">
@@ -630,11 +547,7 @@ export default function LandingPage() {
                   website."
                 </h5>
                 <div className="info-wrapper">
-                  <img
-                    className="bottom-img"
-                    src={QuoteImg1}
-                    alt="Card image cap"
-                  />
+                  <img className="bottom-img" src={QuoteImg1} alt="Card cap" />
                   <div className="bottom-name">Jonathan</div>
                 </div>
               </div>
@@ -646,11 +559,7 @@ export default function LandingPage() {
                   share almost anything, even local artists that I listen to."
                 </h5>
                 <div className="info-wrapper">
-                  <img
-                    className="bottom-img"
-                    src={QuoteImg2}
-                    alt="Card image cap"
-                  />
+                  <img className="bottom-img" src={QuoteImg2} alt="Card cap" />
                   <div className="bottom-name">Susan</div>
                 </div>
               </div>
@@ -658,15 +567,10 @@ export default function LandingPage() {
                 <h5>
                   "In a world with a million different social apps it's funny
                   how little we actually know about each other. My Top Nine is a
-                  great icebreaker to get to know what people really like. It's
-                  really helped my social life!"
+                  great icebreaker to get to know what people really like.
                 </h5>
                 <div className="info-wrapper">
-                  <img
-                    className="bottom-img"
-                    src={QuoteImg3}
-                    alt="Card image cap"
-                  />
+                  <img className="bottom-img" src={QuoteImg3} alt="Card cap" />
                   <div className="bottom-name">Jill</div>
                 </div>
               </div>

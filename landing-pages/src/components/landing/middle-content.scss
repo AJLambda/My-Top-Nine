@@ -1,15 +1,9 @@
 .middle-content {
   background-image: url("../images/brickwall.png");
-  // background-color: gainsboro;
-  // background-size: 100% 100%;
-  // background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  // padding: 30px 5%;
   margin: 0 auto;
-  // border-top: 2px solid $light-gray;
   padding-bottom: 40px;
-  // padding-top: 60px;
 
   .ribbon {
     // padding: 20px;
@@ -187,7 +181,7 @@
     }
 
     .card-text {
-      font-size: 13px;
+      font-size: 14px;
       color: black;
     }
 
@@ -303,6 +297,9 @@
 }
 
 #profilecard {
+  .card-text {
+    padding: 0px 10%;
+  }
   h3 {
     font-size: 24px;
 

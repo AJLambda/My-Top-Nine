@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  FormText,
-  InputGroup,
-  FormControl
-} from "react-bootstrap";
+import { InputGroup, FormControl } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -15,8 +7,6 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
-import Icon from "@material-ui/core/Icon";
-import SaveIcon from "@material-ui/icons/Save";
 import "../landing/landing.scss";
 
 const useStyles = makeStyles(theme => ({
@@ -25,7 +15,6 @@ const useStyles = makeStyles(theme => ({
     borderTopLeftRadius: "0px",
     borderBottomLeftRadius: "0px",
     fontFamily: "Nunito"
-    // boxShadow: "none"
   }
 }));
 
@@ -83,7 +72,6 @@ export default function Footer() {
         </div>
         <div className="footer-top-right">
           <h4>Join our newsletter</h4>
-          {/* <h4>Email</h4> */}
           <label htmlFor="email">Email</label>
           <InputGroup size="lg" className="mb-3">
             <FormControl
@@ -118,9 +106,9 @@ export default function Footer() {
           </p>
         </div>
         <div className="footer-bottom-right">
-          <a>Terms</a>
-          <a>Privacy</a>
-          <a>Security</a>
+          <a href="/">Terms</a>
+          <a href="/">Privacy</a>
+          <a href="/">Security</a>
         </div>
       </div>
     </footer>

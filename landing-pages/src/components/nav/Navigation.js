@@ -1,22 +1,10 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavLogo from "../images/logo5.png";
 import Underline6 from "../images/underline6.png";
 import { makeStyles } from "@material-ui/core/styles";
-import Fab from "@material-ui/core/Fab";
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
+import { Link } from "react-scroll";
 import Button from "@material-ui/core/Button";
 import "../landing/landing.scss";
 
@@ -32,14 +20,18 @@ const useStyles = makeStyles(theme => ({
     "&:hover": {
       backgroundColor: "#A3091D"
     },
+
+    "&:visited": {
+      color: "#fbf9f8"
+    },
+    "&:active": {
+      color: "#fbf9f8"
+    },
     margin: theme.spacing(1)
   },
   button: {
     fontSize: "14px",
 
-    "&:hover": {
-      color: "#fbf9f8"
-    },
     border: "none",
     color: "#d9e8f1",
     "&:focus": {
@@ -50,14 +42,6 @@ const useStyles = makeStyles(theme => ({
     }
   }
 }));
-
-const scrollTo = () => {
-  scroller.scrollTo("scroll-to-element", {
-    duration: 800,
-    delay: 0,
-    smooth: "easeInOutQuart"
-  });
-};
 
 export default function Navigation() {
   const classes = useStyles();
@@ -73,7 +57,7 @@ export default function Navigation() {
             alt="React Bootstrap logo"
           />
         </Navbar.Brand>
-        <a className="logo" href="#">
+        <a className="logo" href="/">
           My Top Nine
           <img className="underline-logo" src={Underline6} alt="" />
         </a>
@@ -88,12 +72,10 @@ export default function Navigation() {
               spy={true}
               smooth={true}
               offset={-40}
-              // duration={2000}
             >
               <Button
                 size="large"
                 variant="outlined"
-                // href="#outlined-buttons"
                 className={classes.button}
               >
                 About Us
@@ -106,12 +88,10 @@ export default function Navigation() {
               spy={true}
               smooth={true}
               offset={-40}
-              // duration={2000}
             >
               <Button
                 size="large"
                 variant="outlined"
-                // href="#outlined-buttons"
                 className={classes.button}
               >
                 intro
@@ -124,12 +104,10 @@ export default function Navigation() {
               spy={true}
               smooth={true}
               offset={-40}
-              // duration={2000}
             >
               <Button
                 size="large"
                 variant="outlined"
-                // href="#outlined-buttons"
                 className={classes.button}
               >
                 How it Works
@@ -142,12 +120,10 @@ export default function Navigation() {
               spy={true}
               smooth={true}
               offset={-80}
-              // duration={2000}
             >
               <Button
                 size="large"
                 variant="outlined"
-                // href="#outlined-buttons"
                 className={classes.button}
               >
                 Top nine wall
@@ -155,11 +131,10 @@ export default function Navigation() {
             </Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">
+            <Nav.Link href="https://my-top-nine-logan.netlify.com/">
               <div className="nav-btn">
                 <Button
                   variant="contained"
-                  // color="primary"
                   aria-label="add"
                   className={classes.navBtn}
                 >
