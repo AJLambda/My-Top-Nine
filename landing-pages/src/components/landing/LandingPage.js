@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../footer/Footer";
+import About from "../about/About";
 import MusicCat from "../images/cat2.png";
 import TvCat from "../images/cat8.png";
 import MoviesCat from "../images/cat4.png";
@@ -655,6 +656,9 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
+        {/* About */}
+        <About />
 
         {/* Footer */}
         <Footer />
