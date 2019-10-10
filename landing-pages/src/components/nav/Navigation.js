@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Navbar from "react-bootstrap/Navbar";
@@ -7,6 +7,16 @@ import Nav from "react-bootstrap/Nav";
 import NavLogo from "../images/logo.png";
 import { makeStyles } from "@material-ui/core/styles";
 import Fab from "@material-ui/core/Fab";
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
+import Button from "@material-ui/core/Button";
 import "../landing/landing.scss";
 
 const useStyles = makeStyles(theme => ({
@@ -15,7 +25,7 @@ const useStyles = makeStyles(theme => ({
     height: "50px",
     fontFamily: "Nunito",
     fontSize: "16px",
-    color: "#fbf9f8",
+    color: "white",
     fontWeight: "bold",
     backgroundColor: "#bb0a21",
     "&:hover": {
@@ -23,20 +33,33 @@ const useStyles = makeStyles(theme => ({
     },
     margin: theme.spacing(1)
   },
-  extendedIcon: {
-    marginRight: theme.spacing(1)
+  button: {
+    fontSize: "14px",
+
+    "&:hover": {
+      color: "#fbf9f8"
+    },
+    border: "none",
+    color: "#d9e8f1",
+    "&:focus": {
+      outline: "none"
+    },
+    "&:hover": {
+      color: "white"
+    }
   }
 }));
 
+const scrollTo = () => {
+  scroller.scrollTo("scroll-to-element", {
+    duration: 800,
+    delay: 0,
+    smooth: "easeInOutQuart"
+  });
+};
+
 export default function Navigation() {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   const classes = useStyles();
-
   return (
     <>
       <Navbar className="nav">
@@ -54,38 +77,91 @@ export default function Navigation() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-            <Tabs
-              variant="fullWidth"
-              value={value}
-              onChange={handleChange}
-              aria-label="nav tabs example"
+          <Nav style={{ margin: "0 auto" }}>
+            <Link
+              activeClass="active"
+              className="team"
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              // duration={2000}
             >
-              <Tab
-                label="Home"
-                to="/"
-                component={Link}
-                style={{ fontSize: "18px" }}
-              />
-              <Tab
-                label="About"
-                component={Link}
-                to="/about"
-                style={{ fontSize: "18px" }}
-              />
-            </Tabs>
+              <Button
+                size="large"
+                variant="outlined"
+                // href="#outlined-buttons"
+                className={classes.button}
+              >
+                About Us
+              </Button>
+            </Link>
+            <Link
+              activeClass="active"
+              className="what"
+              to="what"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              // duration={2000}
+            >
+              <Button
+                size="large"
+                variant="outlined"
+                // href="#outlined-buttons"
+                className={classes.button}
+              >
+                What is it
+              </Button>
+            </Link>
+            <Link
+              activeClass="active"
+              className="works"
+              to="works"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              // duration={2000}
+            >
+              <Button
+                size="large"
+                variant="outlined"
+                // href="#outlined-buttons"
+                className={classes.button}
+              >
+                How it Works
+              </Button>
+            </Link>
+            <Link
+              activeClass="active"
+              className="wall"
+              to="wall"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              // duration={2000}
+            >
+              <Button
+                size="large"
+                variant="outlined"
+                // href="#outlined-buttons"
+                className={classes.button}
+              >
+                Top nine wall
+              </Button>
+            </Link>
           </Nav>
           <Nav>
             <Nav.Link href="#deets">
               <div className="nav-btn">
-                <Fab
-                  variant="extended"
-                  color="primary"
+                <Button
+                  variant="contained"
+                  // color="primary"
                   aria-label="add"
                   className={classes.navBtn}
                 >
                   GET STARTED
-                </Fab>
+                </Button>
               </div>
             </Nav.Link>
           </Nav>

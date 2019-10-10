@@ -17,10 +17,10 @@
 
   .team-members-wrapper {
     display: grid;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     // flex-direction: row;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 7%;
+    grid-gap: 4%;
 
     .card {
       padding: 15px;

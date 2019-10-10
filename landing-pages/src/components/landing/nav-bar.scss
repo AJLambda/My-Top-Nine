@@ -18,11 +18,15 @@
     border-bottom: 1px solid $black;
   }
 
+  .makeStyles-navBtn-1 {
+    color: white;
+  }
+
   .logo {
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     font-size: 3rem;
-    color: $white;
+    color: white;
 
     @media (max-width: $mobile) {
       text-align: center;
