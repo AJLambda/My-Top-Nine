@@ -23,13 +23,37 @@
   }
 
   .logo {
+    position: relative;
+    z-index: 1;
     font-family: "Nunito", sans-serif;
     font-weight: bold;
     font-size: 3rem;
     color: white;
 
+    &:hover {
+      .underline-logo {
+        display: block;
+        position: absolute;
+        width: 205px;
+        height: 100px;
+        top: -20px;
+        left: -15px;
+        /* top: 0px !important; */
+        z-index: -1;
+      }
+    }
+
     @media (max-width: $mobile) {
       text-align: center;
     }
   }
+
+  .underline-logo {
+    display: none;
+  }
+
+  // &:hover {
+  //   color: firebrick;
+  //   position: relative;
+  // }
 }

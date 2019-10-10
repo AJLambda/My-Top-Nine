@@ -5,6 +5,7 @@ import Tab from "@material-ui/core/Tab";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavLogo from "../images/logo.png";
+import Underline6 from "../images/underline6.png";
 import { makeStyles } from "@material-ui/core/styles";
 import Fab from "@material-ui/core/Fab";
 import {
@@ -63,7 +64,7 @@ export default function Navigation() {
   return (
     <>
       <Navbar className="nav">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#">
           <img
             src={NavLogo}
             width="40"
@@ -72,9 +73,11 @@ export default function Navigation() {
             alt="React Bootstrap logo"
           />
         </Navbar.Brand>
-        <Navbar.Brand className="logo" href="#home">
+        <a className="logo" href="#">
           My Top Nine
-        </Navbar.Brand>
+          <img className="underline-logo" src={Underline6} alt="" />
+        </a>
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav style={{ margin: "0 auto" }}>
