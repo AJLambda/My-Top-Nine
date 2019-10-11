@@ -102,19 +102,19 @@ export default function LandingPage() {
             </div>
             <div className="carousel">
               <Carousel
-                autoPlay
-                infiniteLoop
-                showArrows={false}
-                interval={3000}
-                transitionTime={900}
-                // stopOnHover={false}
-                showThumbs={false}
-                showStatus={false}
-                width="500px"
-                height="500px"
-                centerMode
-                centerSlidePercentage={33}
-                className="banner-carousel"
+              // autoPlay
+              // infiniteLoop
+              // showArrows={false}
+              // interval={3000}
+              // transitionTime={900}
+              // // stopOnHover={false}
+              // showThumbs={false}
+              // showStatus={false}
+              // width="500px"
+              // height="500px"
+              // centerMode
+              // centerSlidePercentage={33}
+              // className="banner-carousel"
               >
                 <div className="slideimg-container">
                   <img className="slideimg" src={MusicIcon} alt="Music Icon" />

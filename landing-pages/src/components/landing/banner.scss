@@ -57,6 +57,11 @@
   margin: 0px auto 50px auto;
   overflow: visible;
 
+  .slideimg {
+    height: 150px;
+    width: 150px;
+  }
+
   .slideimg-container {
     padding-bottom: 30px;
   }
@@ -69,6 +74,12 @@
     style {
       min-width: 50%;
     }
+  }
+}
+
+li.slide {
+  style {
+    min-width: 50%;
   }
 }
 
