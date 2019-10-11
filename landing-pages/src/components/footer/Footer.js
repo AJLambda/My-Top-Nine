@@ -7,7 +7,6 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
-import "../landing/landing.scss";
 
 const useStyles = makeStyles(theme => ({
   button: {

@@ -1,15 +1,86 @@
 .cta {
   background-image: url("../images/VirtualComm1.png");
-  background-image: url(/static/media/VirtualComm1.7ccd99a1.png);
   height: 100vh;
   margin-top: 20px;
   background-size: 90% 100%;
   background-position: bottom;
   background-repeat: no-repeat;
   background-color: #fbf9f8;
+}
 
-  .cta-box {
-    width: 100%;
+.cta-box {
+  // width: 100%;
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  // transform: translateY(-50%);
+
+  .spinny-words {
+    margin-right: 80px;
+    display: inline-block;
+    // min-width: 350px;
+    text-align: left;
+  }
+  .spinny-words span {
+    position: absolute;
+    font-weight: bold;
+    top: -0px;
+    opacity: 0;
+    animation: rotateWord 27s linear infinite 0s;
+  }
+  .spinny-words span:nth-child(2) {
+    animation-delay: 3s;
+  }
+  .spinny-words span:nth-child(3) {
+    animation-delay: 6s;
+  }
+  .spinny-words span:nth-child(4) {
+    animation-delay: 9s;
+  }
+  .spinny-words span:nth-child(5) {
+    animation-delay: 12s;
+  }
+  .spinny-words span:nth-child(6) {
+    animation-delay: 15s;
+  }
+  .spinny-words span:nth-child(7) {
+    animation-delay: 18s;
+  }
+  .spinny-words span:nth-child(8) {
+    animation-delay: 21s;
+  }
+  .spinny-words span:nth-child(9) {
+    animation-delay: 24s;
+  }
+  @keyframes rotateWord {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    4% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    12% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    14% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    20% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 
   @media (max-width: $mobile) {
@@ -19,13 +90,12 @@
   h1 {
     font-family: "Nunito";
     color: $black;
-    font-size: 3.8rem;
-    position: absolute;
-    text-align: center;
-    top: 19%;
-    left: 51%;
-    transform: translateX(-50%) translateY(-50%);
-
+    font-size: 4rem;
+    // position: absolute;
+    // text-align: center;
+    // top: 19%;
+    // left: 51%;
+    // transform: translateX(-50%) translateY(-50%);
     span {
       color: $red;
     }

@@ -5,10 +5,8 @@ import JenuelImg from "../images/Jenuel.jpg";
 import LoganImg from "../images/Logan.jpg";
 import PadraicImg from "../images/Padraic.jpg";
 import MoinImg from "../images/Moin.jpg";
-
 import Underline5 from "../images/underline5.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";

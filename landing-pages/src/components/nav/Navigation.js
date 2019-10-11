@@ -6,7 +6,6 @@ import Underline6 from "../images/underline6.png";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
 import Button from "@material-ui/core/Button";
-import "../landing/landing.scss";
 
 const useStyles = makeStyles(theme => ({
   navBtn: {
@@ -20,7 +19,6 @@ const useStyles = makeStyles(theme => ({
     "&:hover": {
       backgroundColor: "#A3091D"
     },
-
     "&:visited": {
       color: "#fbf9f8"
     },
@@ -29,9 +27,9 @@ const useStyles = makeStyles(theme => ({
     },
     margin: theme.spacing(1)
   },
+
   button: {
     fontSize: "14px",
-
     border: "none",
     color: "#d9e8f1",
     "&:focus": {
