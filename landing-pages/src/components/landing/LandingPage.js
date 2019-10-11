@@ -37,6 +37,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Element } from "react-scroll";
 
+
 const useStyles = makeStyles(theme => ({
   topBtn: {
     width: "225px",
@@ -63,6 +64,7 @@ export default function LandingPage() {
   const classes = useStyles();
   return (
     <>
+
       <div className="container">
         {/* CTA */}
 
@@ -71,15 +73,15 @@ export default function LandingPage() {
             <h1>
               Share your favorite&nbsp;
               <span className="spinny-words">
-                <span>movies</span>
                 <span>music</span>
-                <span>sports</span>
-                <span>films</span>
+                <span>movies</span>
+                <span>shows</span>
+                <span>foods</span>
                 <span>games</span>
-                <span>travel</span>
+                <span>sports</span>
+                <span>travels</span>
                 <span>heros</span>
                 <span>villains</span>
-                <span>food</span>
               </span>
             </h1>
           </div>
@@ -599,6 +601,7 @@ export default function LandingPage() {
         {/* Footer */}
         <Footer />
       </div>
+   
     </>
   );
 }

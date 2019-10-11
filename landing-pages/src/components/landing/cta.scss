@@ -15,8 +15,12 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  // margin-right: 40px;
 
   // transform: translateY(-50%);
+  h1 {
+    margin-right: 30px;
+  }
 
   .spinny-words {
     margin-right: 80px;
