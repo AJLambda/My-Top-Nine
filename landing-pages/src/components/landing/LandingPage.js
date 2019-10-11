@@ -33,6 +33,7 @@ import Logo from "../images/logo.png";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import "../landing/landing.scss";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Element } from "react-scroll";
 
@@ -100,69 +101,61 @@ export default function LandingPage() {
                 <span> nine different categories:</span>{" "}
               </div>
             </div>
-            <div className="carousel">
-              <Carousel
-              // autoPlay
-              // infiniteLoop
-              // showArrows={false}
-              // interval={3000}
-              // transitionTime={900}
-              // // stopOnHover={false}
-              // showThumbs={false}
-              // showStatus={false}
-              // width="500px"
-              // height="500px"
-              // centerMode
-              // centerSlidePercentage={33}
-              // className="banner-carousel"
-              >
-                <div className="slideimg-container">
-                  <img className="slideimg" src={MusicIcon} alt="Music Icon" />
-                </div>
-                <div className="slideimg-container">
-                  <img
-                    className="slideimg"
-                    src={MoviesIcon}
-                    alt="Movies Icon"
-                  />
-                </div>
-                <div className="slideimg-container">
-                  <img className="slideimg" src={TvIcon} alt="Tv Icon" />
-                </div>
 
-                <div className="slideimg-container">
-                  <img
-                    className="slideimg"
-                    src={DestinationsIcon}
-                    alt="DesinationsIcon"
-                  />
-                </div>
-                <div className="slideimg-container">
-                  <img className="slideimg" src={FoodsIcon} alt="Foods Icon" />
-                </div>
-                <div className="slideimg-container">
-                  <img className="slideimg" src={GamesIcon} alt="Games Icon" />
-                </div>
+            <Carousel
+              autoPlay
+              infiniteLoop
+              showArrows={false}
+              interval={3000}
+              transitionTime={900}
+              // stopOnHover={false}
+              showThumbs={false}
+              showStatus={false}
+              width="500px"
+              height="500px"
+              centerMode
+              centerSlidePercentage={33}
+              className="banner-carousel"
+            >
+              <div className="slideimg-container">
+                <img className="slideimg" src={MusicIcon} alt="Music Icon" />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={MoviesIcon} alt="Movies Icon" />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={TvIcon} alt="Tv Icon" />
+              </div>
 
-                <div className="slideimg-container">
-                  <img className="slideimg" src={HerosIcon} alt="Heros Icon" />
-                </div>
-                <div className="slideimg-container">
-                  <img
-                    className="slideimg"
-                    src={VillainsIcon}
-                    alt="Villains Icon"
-                  />
-                </div>
-                <div className="slideimg-container">
-                  <img
-                    className="slideimg"
-                    src={SportsIcon}
-                    alt="Sports Icon"
-                  />
-                </div>
-              </Carousel>
-            </div>
+              <div className="slideimg-container">
+                <img
+                  className="slideimg"
+                  src={DestinationsIcon}
+                  alt="DesinationsIcon"
+                />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={FoodsIcon} alt="Foods Icon" />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={GamesIcon} alt="Games Icon" />
+              </div>
+
+              <div className="slideimg-container">
+                <img className="slideimg" src={HerosIcon} alt="Heros Icon" />
+              </div>
+              <div className="slideimg-container">
+                <img
+                  className="slideimg"
+                  src={VillainsIcon}
+                  alt="Villains Icon"
+                />
+              </div>
+              <div className="slideimg-container">
+                <img className="slideimg" src={SportsIcon} alt="Sports Icon" />
+              </div>
+            </Carousel>
+
             <div className="banner-two"></div>
           </section>
         </Element>
@@ -253,6 +246,7 @@ export default function LandingPage() {
         </Element>
 
         {/* Middle Content */}
+
         <Element name="wall" className="wall">
           <section className="middle-content">
             <div className="middle-header">
