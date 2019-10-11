@@ -37,24 +37,23 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Element } from "react-scroll";
 
-
 const useStyles = makeStyles(theme => ({
   topBtn: {
     width: "225px",
     height: "50px",
     fontFamily: "Nunito",
     fontSize: "16px",
-    color: "#fbf9f8",
+    color: "#fbf9f8 !important",
     fontWeight: "bold",
     backgroundColor: "#bb0a21",
     "&:hover": {
       backgroundColor: "#A3091D"
     },
     "&:visited": {
-      color: "#fbf9f8"
+      color: "#fbf9f8 !important"
     },
     "&:active": {
-      color: "#fbf9f8"
+      color: "#fbf9f8 !important"
     },
     margin: theme.spacing(1)
   }
@@ -64,7 +63,6 @@ export default function LandingPage() {
   const classes = useStyles();
   return (
     <>
-
       <div className="container">
         {/* CTA */}
 
@@ -601,7 +599,6 @@ export default function LandingPage() {
         {/* Footer */}
         <Footer />
       </div>
-   
     </>
   );
 }
