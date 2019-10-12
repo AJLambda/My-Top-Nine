@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavLogo from "../images/logo5.png";
+import NavLogo from "../images/logo6.png";
 import Underline6 from "../images/underline6.png";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
@@ -15,9 +15,9 @@ const useStyles = makeStyles(theme => ({
     fontSize: "16px",
     color: "white",
     fontWeight: "bold",
-    backgroundColor: "#bb0a21",
+    backgroundColor: "#81d0e1",
     "&:hover": {
-      backgroundColor: "#A3091D"
+      backgroundColor: "#71b8dd"
     },
     "&:visited": {
       color: "#fbf9f8"
@@ -129,7 +129,7 @@ export default function Navigation() {
             </Link>
           </Nav>
           <Nav>
-            <Nav.Link href="https://my-top-nine-logan.netlify.com/">
+            <Nav.Link href="/">
               <div className="nav-btn">
                 <Button
                   variant="contained"

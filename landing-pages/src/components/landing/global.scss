@@ -47,13 +47,17 @@ a:active {
   }
 }
 
+//https://img4.goodfon.com/original/1920x1200/6/94/abstraktsiia-geometriia-kvadraty-blue-squares-background-geo.jpg
 //Page fade in
 body {
   transition: all 0.7s linear;
   // background: rgba(0, 0, 0, 0.4);
-  background-image: url("../images/background3.jpg");
+  background: url("../images/blue4.jpg");
   background-size: contain;
+
+  // background-position: center;
   // background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .loading {
   opacity: 0;

@@ -237,7 +237,7 @@ export default function LandingPage() {
                 color="primary"
                 aria-label="add"
                 className={classes.topBtn}
-                href="https://my-top-nine-logan.netlify.com/"
+                href="/"
               >
                 GET STARTED
               </Button>
@@ -537,7 +537,7 @@ export default function LandingPage() {
                 color="primary"
                 aria-label="add"
                 className={classes.topBtn}
-                href="https://my-top-nine-logan.netlify.com/"
+                href="/"
               >
                 CREATE YOUR WALL
               </Button>
