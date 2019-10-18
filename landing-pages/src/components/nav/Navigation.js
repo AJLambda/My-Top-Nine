@@ -47,15 +47,33 @@ const showSettings = event => {
 };
 
 class Navigation extends React.Component {
-  state = {
-    searchNodes: ""
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchNodes: "",
+      menuOpen: false
+    };
+  }
+
+  // This keeps your state in sync with the opening/closing of the menu
+  // via the default means, e.g. clicking the X, pressing the ESC key etc.
+  handleStateChange(state) {
+    this.setState({ menuOpen: state.isOpen });
+  }
+
+  closeMenu() {
+    this.setState({ menuOpen: false });
+  }
+
   // const classes = useStyles();
   render() {
     const { classes } = this.props;
     return (
       <>
-        <Menu>
+        <Menu
+          isOpen={this.state.menuOpen}
+          onStateChange={state => this.handleStateChange(state)}
+        >
           <Link
             activeClass="active"
             className="team"
@@ -63,6 +81,8 @@ class Navigation extends React.Component {
             spy={true}
             smooth={true}
             offset={-40}
+            onSetActive={() => this.closeMenu()}
+            onSetInactive={() => this.closeMenu()}
           >
             About Us
           </Link>
@@ -73,6 +93,8 @@ class Navigation extends React.Component {
             spy={true}
             smooth={true}
             offset={-40}
+            onSetActive={() => this.closeMenu()}
+            onSetInactive={() => this.closeMenu()}
           >
             Introduction
           </Link>
@@ -83,6 +105,8 @@ class Navigation extends React.Component {
             spy={true}
             smooth={true}
             offset={-40}
+            onSetActive={() => this.closeMenu()}
+            onSetInactive={() => this.closeMenu()}
           >
             How It Works
           </Link>
@@ -93,6 +117,8 @@ class Navigation extends React.Component {
             spy={true}
             smooth={true}
             offset={-80}
+            onSetActive={() => this.closeMenu()}
+            onSetInactive={() => this.closeMenu()}
           >
             Top Nine Wall
           </Link>
