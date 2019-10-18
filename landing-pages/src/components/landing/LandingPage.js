@@ -61,6 +61,25 @@ const useStyles = makeStyles(theme => ({
       color: "#fbf9f8 !important"
     },
     margin: theme.spacing(1)
+  },
+  topBtn1: {
+    width: "300px",
+    height: "60px",
+    fontFamily: "Nunito",
+    fontSize: "16px",
+    color: "#fbf9f8 !important",
+    fontWeight: "bold",
+    backgroundColor: "#bb0a21",
+    "&:hover": {
+      backgroundColor: "#A3091D"
+    },
+    "&:visited": {
+      color: "#fbf9f8 !important"
+    },
+    "&:active": {
+      color: "#fbf9f8 !important"
+    },
+    margin: theme.spacing(1)
   }
 }));
 
@@ -68,7 +87,6 @@ export default function LandingPage() {
   const classes = useStyles();
   return (
     <>
-    
       <Navigation />
       <div className="main-container">
         {/* CTA */}
@@ -90,10 +108,24 @@ export default function LandingPage() {
               </span>
             </h1>
           </div>
+          <div className="cta-mobile-text">
+            <h1>Share your favorites</h1>
+          </div>
+          <div className="cta-btn-mobile">
+            <Button
+              variant="contained"
+              color="primary"
+              aria-label="add"
+              className={classes.topBtn1}
+              href="/"
+            >
+              GET STARTED
+            </Button>
+          </div>
         </section>
         {/* </Fade> */}
 
-        {/* Banner */}
+        {/* Banner Desktop */}
 
         <Element name="what" className="what">
           <section className="banner">
@@ -166,6 +198,29 @@ export default function LandingPage() {
             </Carousel>
 
             <div className="banner-two"></div>
+          </section>
+        </Element>
+
+        {/* Banner Mobile */}
+        <Element name="what" className="what">
+          <section className="mobile-banner">
+            <div className="mobile-banner-info">
+              <div className="mobile-banner-title">
+                <h2>What is My Top Nine?</h2>
+              </div>
+              <div className="mobile-banner-text">
+                <p>
+                  Do you remember Myspace Top 8? If so, our site will be a nice
+                  bit of social nostalgia. If not, well welcome to a world where
+                  friends shared more than their food choices for the day. My
+                  Top Nine is about sharing what you love most across
+                  <span style={{ color: "#bb0a21", fontWeight: "bold" }}>
+                    {" "}
+                    nine different categories
+                  </span>{" "}
+                </p>
+              </div>
+            </div>
           </section>
         </Element>
 
@@ -274,6 +329,119 @@ export default function LandingPage() {
                 href="/"
               >
                 GET STARTED
+              </Button>
+            </div>
+          </section>
+
+          {/* Mobile */}
+
+          <section className="mobile-top-content">
+            <div className="top-title">
+              {/* <Fade bottom> */}
+
+              <h2>How does it work?</h2>
+
+              {/* </Fade> */}
+            </div>
+
+            <div className="top-wrapper">
+              <Fade right>
+                <div className="content-box">
+                  <div className="top-circle">
+                    <span>
+                      <img
+                        className="top-img"
+                        id="create-img"
+                        src={CreateImg}
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div className="text-wrapper">
+                    <div className="top-title">Create</div>
+
+                    <div className="top-text">
+                      Create a profile and use your wall to{" "}
+                      <span className="underline3"> build your Top Nine</span>
+                    </div>
+                  </div>
+                </div>
+              </Fade>
+              <Fade left>
+                <div className="content-box">
+                  <div className="top-circle">
+                    <span>
+                      <img
+                        className="top-img"
+                        id="search-img"
+                        src={SearchImg}
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div className="text-wrapper">
+                    <div className="top-title">Choose</div>
+                    <div className="top-text">
+                      Choose your{" "}
+                      <span className="underline2">favorite selections</span>{" "}
+                      from each category
+                    </div>
+                  </div>
+                </div>
+              </Fade>
+              <Fade right>
+                <div className="content-box">
+                  <div className="top-circle">
+                    <span>
+                      <img
+                        className="top-img"
+                        id="add-img"
+                        src={AddImg}
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div className="text-wrapper">
+                    <div className="top-title">Add</div>
+                    <div className="top-text">
+                      Add and arrange your new choice to your Top Nine wall
+                    </div>
+                  </div>
+                </div>
+              </Fade>
+
+              <Fade left>
+                <div className="content-box">
+                  <div className="top-circle">
+                    <span>
+                      <img
+                        className="top-img"
+                        id="share-img"
+                        src={ShareImg}
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                  <div className="text-wrapper">
+                    <div className="top-title">Share</div>
+                    <div className="top-text">
+                      <span className="underline4">Share your wall</span> with
+                      your friends and compare!
+                    </div>
+                  </div>
+                </div>
+              </Fade>
+            </div>
+
+            <div className="top-btn">
+              <Button
+                variant="contained"
+                color="primary"
+                aria-label="add"
+                className={classes.topBtn1}
+                href="/"
+              >
+                CREATE A PROFILE
               </Button>
             </div>
           </section>

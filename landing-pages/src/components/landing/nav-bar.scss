@@ -1,6 +1,6 @@
 .nav {
   width: 100%;
-  max-width: 100vw;
+
   // height: 70px;
   background: $blue;
   padding: 0 3rem 0 3rem;
@@ -56,7 +56,7 @@
 
 //Mobile Nav
 .mobile-nav {
-  padding: 15px;
+  padding: 5px;
   background-color: #416db4;
   position: absolute;
   top: 0;
@@ -73,6 +73,13 @@
       font-size: 30px;
     }
   }
+
+  @media (min-width: $mobile) {
+    display: none;
+  }
+  @media (max-width: $mobile) {
+    display: block;
+  }
 }
 
 /* Position and sizing of burger button */
@@ -80,8 +87,15 @@
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 15px;
+  top: 25px;
+
+  @media (min-width: $mobile) {
+    display: none;
+  }
+  @media (max-width: $mobile) {
+    display: block;
+  }
 }
 
 /* Color/shape of burger icon bars */
@@ -121,6 +135,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: #373a47;
   padding: 0;
   font-size: 3em;
+
+  @media (min-width: $mobile) {
+    display: none;
+  }
+  @media (max-width: $mobile) {
+    display: block;
+  }
 }
 
 /* Morph shape necessary with bubble or elastic */
