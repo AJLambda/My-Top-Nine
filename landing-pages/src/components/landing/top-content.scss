@@ -5,6 +5,7 @@
   z-index: 1;
 
   .top-wrapper {
+    overflow: hidden;
     padding: 5%;
     background-color: white;
     display: grid;
@@ -99,6 +100,10 @@
       border: none;
       border-radius: 5px;
     }
+  }
+
+  .content-box {
+    overflow: hidden;
   }
 }
 
