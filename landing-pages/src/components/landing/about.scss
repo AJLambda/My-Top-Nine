@@ -80,5 +80,9 @@
       line-height: 2rem;
       padding: 10px 0px;
     }
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

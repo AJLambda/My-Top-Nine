@@ -70,6 +70,13 @@ class Navigation extends React.Component {
     const { classes } = this.props;
     return (
       <>
+        {/* Mobile Nav */}
+        {/* <Navbar className="mobile-nav"> */}
+        <div className="mobile-nav">
+          <div className="mobile-title">
+            <h1>My Top Nine</h1>
+          </div>
+        </div>
         <Menu
           isOpen={this.state.menuOpen}
           onStateChange={state => this.handleStateChange(state)}
@@ -123,6 +130,8 @@ class Navigation extends React.Component {
             Top Nine Wall
           </Link>
         </Menu>
+        {/* </Navbar> */}
+        {/* Desktop Nav */}
         <Navbar className="nav">
           <Navbar.Brand href="#">
             <img

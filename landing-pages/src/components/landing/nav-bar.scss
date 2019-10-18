@@ -55,6 +55,25 @@
 }
 
 //Mobile Nav
+.mobile-nav {
+  padding: 15px;
+  background-color: #416db4;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+
+  .mobile-title {
+    padding: 15px;
+    h1 {
+      color: white;
+      font-weight: bold;
+      font-family: "Nunito";
+      font-size: 30px;
+    }
+  }
+}
 
 /* Position and sizing of burger button */
 .bm-burger-button {

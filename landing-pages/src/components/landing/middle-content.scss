@@ -28,6 +28,10 @@
     position: relative;
     top: 20px;
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
   .ribbon5:before,
   .ribbon5:after {
@@ -117,6 +121,11 @@
       "nine ten ten eleven"
       "nine ten ten five"
       "eight seven six five";
+
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .card {
@@ -252,6 +261,10 @@
     font-weight: bold;
     color: $red;
     font-family: "Nunito", sans-serif;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
   }
 }
 
