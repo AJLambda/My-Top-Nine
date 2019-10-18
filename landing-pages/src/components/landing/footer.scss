@@ -55,6 +55,18 @@ footer {
       padding-top: 20px;
       padding-bottom: 20px;
       width: 50%;
+
+      @media (max-width: $mobile) {
+        h4 {
+          font-size: 16px;
+        }
+        .started {
+          display: none;
+        }
+        .about {
+          display: none;
+        }
+      }
     }
     .footer-top-right {
       display: flex;
@@ -63,6 +75,21 @@ footer {
       padding-top: 20px;
       padding-bottom: 20px;
       margin-left: 15%;
+
+      @media (max-width: $mobile) {
+        margin-left: 0;
+        width: 100%;
+
+        h4 {
+          font-size: 16px;
+        }
+
+        .MuiButton-root {
+          width: 30px;
+          // padding-left: 5px;
+          // padding-right: 5px;
+        }
+      }
 
       .form-group {
         text-align: left;
@@ -85,10 +112,6 @@ footer {
         background-color: firebrick;
         color: white;
       }
-    }
-
-    @media (max-width: $mobile) {
-      background: rgba(187, 10, 33, 0.8);
     }
   }
 }
