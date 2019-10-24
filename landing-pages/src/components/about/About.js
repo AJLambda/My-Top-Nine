@@ -115,8 +115,8 @@ export default function About() {
                   </span>
                 </h4>
                 <p className="member-text">
-                  The creator of another landing page. A developer with a love
-                  for design.
+                  Created a seperate landing page. A developer with a love for
+                  design.
                 </p>
                 <div className="link-wrapper">
                   <div className="card-link">
