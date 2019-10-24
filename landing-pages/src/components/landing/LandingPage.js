@@ -21,6 +21,7 @@ import HerosIcon from "../images/herosicon.png";
 import FoodsIcon from "../images/foodsicon.png";
 import VillainsIcon from "../images/villainsicon.png";
 import DestinationsIcon from "../images/destinationsicon.png";
+import MobileBannerImg from "../images/top9mobile1.png";
 import CreateImg from "../images/create3.png";
 import SearchImg from "../images/choose3.png";
 import AddImg from "../images/add2.png";
@@ -136,9 +137,9 @@ export default function LandingPage() {
               <div className="banner-text">
                 Do you remember Myspace Top 8? If so, our site will be a nice
                 bit of social nostalgia. <br />
-                If not, well welcome to a world where friends shared more than
-                their food choices for the day. <br /> My Top Nine is about
-                sharing what you love most across
+                If not, welcome to a world where friends shared more than their
+                food choices for the day. <br /> My Top Nine is about sharing
+                what you love most across
                 <span> nine different categories:</span>{" "}
               </div>
             </div>
@@ -208,10 +209,13 @@ export default function LandingPage() {
               <div className="mobile-banner-title">
                 <h2>What is My Top Nine?</h2>
               </div>
+              <div className="mobile-banner-img">
+                <img src={MobileBannerImg} alt="man holding trophy" />
+              </div>
               <div className="mobile-banner-text">
                 <p>
                   Do you remember Myspace Top 8? If so, our site will be a nice
-                  bit of social nostalgia. If not, well welcome to a world where
+                  bit of social nostalgia. If not, welcome to a world where
                   friends shared more than their food choices for the day. My
                   Top Nine is about sharing what you love most across
                   <span style={{ color: "#bb0a21", fontWeight: "bold" }}>
@@ -783,7 +787,7 @@ export default function LandingPage() {
                     share almost anything, even local artists that I listen to."
                   </h5>
                 </Fade>
-                <div className="info-wrapper">
+                <div className="info-wrapper" id="#reverse">
                   <img className="bottom-img" src={QuoteImg2} alt="Card cap" />
                   <div className="bottom-name">Susan</div>
                 </div>

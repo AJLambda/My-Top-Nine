@@ -107,6 +107,13 @@
       margin-top: 15px;
       display: flex;
       flex-direction: row;
+
+      @media (max-width: $mobile) {
+        // margin: 0 auto;
+        #reverse {
+          flex-direction: row-reverse;
+        }
+      }
     }
 
     .bottom-img {

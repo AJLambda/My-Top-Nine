@@ -12,21 +12,22 @@
     margin-top: 0px;
     // height: 500px;
     height: 700px;
-    background-image: url("../images/top9mobile.png");
+    background-image: url("../images/cta-mobile-img1.png");
     // height: 100vh;
     // margin-top: 80px;
-    background-size: 90%;
+    // height: 500px;
+    background-size: 80%;
     background-position: center;
     position: relative;
   }
 
   .cta-btn-mobile {
     @media (max-width: $mobile) {
-      display: block;
+      // display: none;
 
       a {
         position: absolute;
-        top: 400px;
+        top: 550px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -195,12 +196,13 @@
   // position: absolute;
   // bottom: 0;
   // left: 30px;
-  color: #bb0a21;
+  // color: #bb0a21;
   padding-top: 120px;
   margin-bottom: 10px;
 
   h1 {
     font-size: 30px;
+    margin-top: -20px;
   }
 
   @media (max-width: $mobile) {

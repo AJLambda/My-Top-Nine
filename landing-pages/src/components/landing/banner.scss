@@ -104,22 +104,30 @@ li.slide.selected {
 // }
 
 .mobile-banner {
-  // padding: 30px 10px 30px 10px;
-
+  height: 700px; // padding: 30px 10px 30px 10px;
   .mobile-banner-info {
-  }
-  .mobile-banner-title {
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    h2 {
-      font-size: 30px;
+    .mobile-banner-img {
+      //
     }
-  }
-  .mobile-banner-text {
-    font-size: 18px;
-    padding: 5%;
-    line-height: 1.2em;
+    img {
+      width: 70%;
+    }
+    .mobile-banner-title {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 10px;
+      margin-bottom: 60px;
+
+      h2 {
+        font-size: 30px;
+      }
+    }
+    .mobile-banner-text {
+      font-size: 18px;
+      padding: 5%;
+      padding-top: 0px;
+      line-height: 1.2em;
+    }
   }
 
   @media (min-width: $mobile) {
@@ -130,6 +138,6 @@ li.slide.selected {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 300px;
+    // height: 300px;
   }
 }
