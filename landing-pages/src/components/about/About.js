@@ -11,7 +11,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Element } from "react-scroll";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 
 export default function About() {
   return (

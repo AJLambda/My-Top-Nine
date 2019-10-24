@@ -48,9 +48,9 @@ const styles = theme => ({
   }
 });
 
-const showSettings = event => {
-  event.preventDefault();
-};
+// const showSettings = event => {
+//   event.preventDefault();
+// };
 
 class Navigation extends React.Component {
   constructor(props) {

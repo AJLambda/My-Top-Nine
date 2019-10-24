@@ -150,16 +150,16 @@
   }
 
   .top-title {
-    padding-top: 10px;
+    padding-top: 20px;
     font-family: "ProximaBold";
     font-size: 25px;
   }
 
   .top-text {
     color: #000;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: lighter;
-    padding: 10px 5% 10px 5%;
+    padding: 5%;
     line-height: 2rem;
     padding-bottom: 5px;
 
@@ -240,4 +240,10 @@
 }
 #share-img {
   margin-top: -2px;
+}
+
+@media (min-width: $mobile) {
+  #mobile-wrapper {
+    display: block;
+  }
 }

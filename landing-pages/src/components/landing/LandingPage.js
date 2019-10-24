@@ -232,13 +232,9 @@ export default function LandingPage() {
         <Element name="works" className="works">
           <section className="top-content">
             <div className="top-title">
-              {/* <Fade bottom> */}
-
               <h2>How does it work?</h2>
-
-              {/* </Fade> */}
             </div>
-
+            {/* Desktop */}
             <div className="top-wrapper">
               <Fade right delay={500}>
                 <div className="content-box">
@@ -341,100 +337,81 @@ export default function LandingPage() {
 
           <section className="mobile-top-content">
             <div className="top-title">
-              {/* <Fade bottom> */}
-
               <h2>How does it work?</h2>
-
-              {/* </Fade> */}
             </div>
 
-            <div className="top-wrapper">
-              <Fade right>
-                <div className="content-box">
-                  <div className="top-circle">
-                    <span>
-                      <img
-                        className="top-img"
-                        id="create-img"
-                        src={CreateImg}
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div className="text-wrapper">
-                    <div className="top-title">Create</div>
+            <div className="top-wrapper" id="mobile-wrapper">
+              <div className="content-box">
+                <div className="top-circle">
+                  <span>
+                    <img
+                      className="top-img"
+                      id="create-img"
+                      src={CreateImg}
+                      alt=""
+                    />
+                  </span>
+                </div>
 
-                    <div className="top-text">
-                      Create a profile and use your wall to{" "}
-                      <span className="underline3"> build your Top Nine</span>
-                    </div>
-                  </div>
-                </div>
-              </Fade>
-              <Fade left>
-                <div className="content-box">
-                  <div className="top-circle">
-                    <span>
-                      <img
-                        className="top-img"
-                        id="search-img"
-                        src={SearchImg}
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div className="text-wrapper">
-                    <div className="top-title">Choose</div>
-                    <div className="top-text">
-                      Choose your{" "}
-                      <span className="underline2">favorite selections</span>{" "}
-                      from each category
-                    </div>
-                  </div>
-                </div>
-              </Fade>
-              <Fade right>
-                <div className="content-box">
-                  <div className="top-circle">
-                    <span>
-                      <img
-                        className="top-img"
-                        id="add-img"
-                        src={AddImg}
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div className="text-wrapper">
-                    <div className="top-title">Add</div>
-                    <div className="top-text">
-                      Add and arrange your new choice to your Top Nine wall
-                    </div>
-                  </div>
-                </div>
-              </Fade>
+                <div className="top-title">Create</div>
 
-              <Fade left>
-                <div className="content-box">
-                  <div className="top-circle">
-                    <span>
-                      <img
-                        className="top-img"
-                        id="share-img"
-                        src={ShareImg}
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <div className="text-wrapper">
-                    <div className="top-title">Share</div>
-                    <div className="top-text">
-                      <span className="underline4">Share your wall</span> with
-                      your friends and compare!
-                    </div>
-                  </div>
+                <div className="top-text">
+                  Create a profile and use your wall to{" "}
+                  <span className="underline3"> build your Top Nine</span>
                 </div>
-              </Fade>
+              </div>
+
+              <div className="content-box">
+                <div className="top-circle">
+                  <span>
+                    <img
+                      className="top-img"
+                      id="search-img"
+                      src={SearchImg}
+                      alt=""
+                    />
+                  </span>
+                </div>
+
+                <div className="top-title">Choose</div>
+                <div className="top-text">
+                  Choose your{" "}
+                  <span className="underline2">favorite selections</span> from
+                  each category
+                </div>
+              </div>
+
+              <div className="content-box">
+                <div className="top-circle">
+                  <span>
+                    <img className="top-img" id="add-img" src={AddImg} alt="" />
+                  </span>
+                </div>
+
+                <div className="top-title">Add</div>
+                <div className="top-text">
+                  Add and arrange your new choice to your Top Nine wall
+                </div>
+              </div>
+
+              <div className="content-box">
+                <div className="top-circle">
+                  <span>
+                    <img
+                      className="top-img"
+                      id="share-img"
+                      src={ShareImg}
+                      alt=""
+                    />
+                  </span>
+                </div>
+
+                <div className="top-title">Share</div>
+                <div className="top-text">
+                  <span className="underline4">Share your wall</span> with your
+                  friends and compare!
+                </div>
+              </div>
             </div>
 
             <div className="top-btn">
@@ -469,6 +446,7 @@ export default function LandingPage() {
 
             <div className="mobile-middle-title">
               <h2>Categories</h2>
+              <p>Choose from nine different categories</p>
             </div>
 
             <div className="card-container">
@@ -767,16 +745,78 @@ export default function LandingPage() {
               </h5>
             </div>
 
-            <div className="quotes-container">
+            {/* desktop */}
+            <div className="desktop-quotes">
+              <div className="quotes-container">
+                <div className="bottom-quotes">
+                  <Fade up>
+                    <h5>
+                      "Finally, a social media site that encourages creativity!
+                      I really enjoy building and organizing my wall, the whole
+                      process is so easy and intuitive. It's like having my own
+                      mini website."
+                    </h5>
+                  </Fade>
+                  <div className="info-wrapper">
+                    <img
+                      className="bottom-img"
+                      src={QuoteImg1}
+                      alt="Card cap"
+                    />
+                    <div className="bottom-name">Jonathan</div>
+                  </div>
+                </div>
+
+                <div className="bottom-quotes">
+                  <Fade up delay={500}>
+                    <h5>
+                      "I love that there are so many different categories. My
+                      Top Nine has such a deep collection that I am able to find
+                      and share almost anything, even local artists that I
+                      listen to."
+                    </h5>
+                  </Fade>
+                  <div className="info-wrapper" id="#reverse">
+                    <img
+                      className="bottom-img"
+                      src={QuoteImg2}
+                      alt="Card cap"
+                    />
+                    <div className="bottom-name">Susan</div>
+                  </div>
+                </div>
+
+                <div className="bottom-quotes">
+                  <Fade up delay={1000}>
+                    <h5>
+                      "In a world with a million different social apps it's
+                      funny how little we actually know about each other. My Top
+                      Nine is a great icebreaker to get to know what people
+                      really like.
+                    </h5>
+                  </Fade>
+                  <div className="info-wrapper">
+                    <img
+                      className="bottom-img"
+                      src={QuoteImg3}
+                      alt="Card cap"
+                    />
+                    <div className="bottom-name">Jill</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* mobile */}
+            <div className="quotes-container" id="quotes-mobile">
               <div className="bottom-quotes">
-                <Fade up>
-                  <h5>
-                    "Finally, a social media site that encourages creativity! I
-                    really enjoy building and organizing my wall, the whole
-                    process is so easy and intuitive. It's like having my own
-                    mini website."
-                  </h5>
-                </Fade>
+                <h5>
+                  "Finally, a social media site that encourages creativity! I
+                  really enjoy building and organizing my wall, the whole
+                  process is so easy and intuitive. It's like having my own mini
+                  website."
+                </h5>
+
                 <div className="info-wrapper">
                   <img className="bottom-img" src={QuoteImg1} alt="Card cap" />
                   <div className="bottom-name">Jonathan</div>
@@ -784,13 +824,12 @@ export default function LandingPage() {
               </div>
 
               <div className="bottom-quotes">
-                <Fade up delay={500}>
-                  <h5>
-                    "I love that there are so many different categories. My Top
-                    Nine has such a deep collection that I am able to find and
-                    share almost anything, even local artists that I listen to."
-                  </h5>
-                </Fade>
+                <h5>
+                  "I love that there are so many different categories. My Top
+                  Nine has such a deep collection that I am able to find and
+                  share almost anything, even local artists that I listen to."
+                </h5>
+
                 <div className="info-wrapper" id="#reverse">
                   <img className="bottom-img" src={QuoteImg2} alt="Card cap" />
                   <div className="bottom-name">Susan</div>
@@ -798,13 +837,12 @@ export default function LandingPage() {
               </div>
 
               <div className="bottom-quotes">
-                <Fade up delay={1000}>
-                  <h5>
-                    "In a world with a million different social apps it's funny
-                    how little we actually know about each other. My Top Nine is
-                    a great icebreaker to get to know what people really like.
-                  </h5>
-                </Fade>
+                <h5>
+                  "In a world with a million different social apps it's funny
+                  how little we actually know about each other. My Top Nine is a
+                  great icebreaker to get to know what people really like.
+                </h5>
+
                 <div className="info-wrapper">
                   <img className="bottom-img" src={QuoteImg3} alt="Card cap" />
                   <div className="bottom-name">Jill</div>
