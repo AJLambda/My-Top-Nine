@@ -5,6 +5,12 @@
   margin: 0 auto;
   padding-bottom: 40px;
 
+  @media (min-width: $mobile) {
+    .mobile-middle-title {
+      display: none;
+    }
+  }
+
   .ribbon {
     height: 120px;
     position: relative;
