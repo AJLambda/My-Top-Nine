@@ -2,11 +2,17 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavLogo from "../images/logo6.png";
+import MobileNavLogo from "../images/logo.png";
 import Underline6 from "../images/underline6.png";
 import { withStyles } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
 import Button from "@material-ui/core/Button";
 import { slide as Menu } from "react-burger-menu";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
+import { faHandPeace } from "@fortawesome/free-solid-svg-icons";
+import { faCog } from "@fortawesome/free-solid-svg-icons";
+import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
 const styles = theme => ({
   navBtn: {
@@ -73,6 +79,15 @@ class Navigation extends React.Component {
         {/* Mobile Nav */}
         {/* <Navbar className="mobile-nav"> */}
         <div className="mobile-nav">
+          <div className="mobile-nav-logo">
+            <img
+              src={MobileNavLogo}
+              width="30"
+              height="30"
+              // className="d-inline-block align-bottom"
+              alt="trophy logo"
+            />
+          </div>
           <div className="mobile-title">
             <h1>My Top Nine</h1>
           </div>
@@ -83,18 +98,6 @@ class Navigation extends React.Component {
         >
           <Link
             activeClass="active"
-            className="team"
-            to="team"
-            spy={true}
-            smooth={true}
-            offset={-40}
-            onSetActive={() => this.closeMenu()}
-            onSetInactive={() => this.closeMenu()}
-          >
-            About Us
-          </Link>
-          <Link
-            activeClass="active"
             className="what"
             to="what"
             spy={true}
@@ -103,6 +106,10 @@ class Navigation extends React.Component {
             onSetActive={() => this.closeMenu()}
             onSetInactive={() => this.closeMenu()}
           >
+            <FontAwesomeIcon
+              icon={faHandPeace}
+              style={{ marginRight: "10px" }}
+            />
             Introduction
           </Link>
           <Link
@@ -115,6 +122,7 @@ class Navigation extends React.Component {
             onSetActive={() => this.closeMenu()}
             onSetInactive={() => this.closeMenu()}
           >
+            <FontAwesomeIcon icon={faCog} style={{ marginRight: "8px" }} />
             How It Works
           </Link>
           <Link
@@ -127,7 +135,24 @@ class Navigation extends React.Component {
             onSetActive={() => this.closeMenu()}
             onSetInactive={() => this.closeMenu()}
           >
-            Top Nine Wall
+            <FontAwesomeIcon icon={faTrophy} style={{ marginRight: "5px" }} />
+            Categories
+          </Link>
+          <Link
+            activeClass="active"
+            className="team"
+            to="team"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            onSetActive={() => this.closeMenu()}
+            onSetInactive={() => this.closeMenu()}
+          >
+            <FontAwesomeIcon
+              icon={faAddressBook}
+              style={{ marginRight: "10px" }}
+            />
+            About Us
           </Link>
         </Menu>
         {/* </Navbar> */}
@@ -139,7 +164,7 @@ class Navigation extends React.Component {
               width="70"
               height="70"
               className="d-inline-block align-bottom"
-              alt="React Bootstrap logo"
+              alt="trophy logo"
             />
           </Navbar.Brand>
           <a className="logo" href="/">

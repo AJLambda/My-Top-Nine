@@ -114,7 +114,7 @@
 
   .card-container {
     width: 90%;
-    margin: 80px auto;
+    margin: 40px auto 80px auto;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 
@@ -282,6 +282,12 @@
     font-family: "Nunito", sans-serif;
   }
 
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+#friends {
   @media (max-width: $mobile) {
     display: none;
   }

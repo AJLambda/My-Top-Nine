@@ -467,6 +467,10 @@ export default function LandingPage() {
               </div>
             </div>
 
+            <div className="mobile-middle-title">
+              <h2>Categories</h2>
+            </div>
+
             <div className="card-container">
               <div className="card" style={{ gridArea: "one" }}>
                 <div className="img-wrapper">
@@ -613,7 +617,7 @@ export default function LandingPage() {
                   </p>
                 </div>
               </div>
-              <div className="card" style={{ gridArea: "eleven" }}>
+              <div className="card" style={{ gridArea: "eleven" }} id="friends">
                 <div className="img-wrapper">
                   <img
                     className="card-img-top"

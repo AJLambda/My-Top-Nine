@@ -63,9 +63,15 @@
   width: 100%;
   position: fixed;
   z-index: 2;
+  box-shadow: 0 1px 4px 0 rgba(104, 74, 74, 0.4);
+
+  .mobile-nav-logo {
+    align-self: center;
+  }
 
   .mobile-title {
     padding: 15px;
+    padding-left: 5px;
     h1 {
       color: white;
       font-weight: bold;
@@ -78,7 +84,9 @@
     display: none;
   }
   @media (max-width: $mobile) {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -134,7 +142,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   // width: 20px;
   background: #373a47;
   padding: 0;
-  font-size: 3em;
+  font-size: 2.5em;
 
   @media (min-width: $mobile) {
     display: none;
