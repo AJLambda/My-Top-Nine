@@ -43,7 +43,7 @@
 .cta-box {
   // width: 100%;
   position: absolute;
-  top: 16%;
+  top: 14%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -203,6 +203,7 @@
   h1 {
     font-size: 30px;
     margin-top: -20px;
+    font-family: "Nunito";
   }
 
   @media (max-width: $mobile) {

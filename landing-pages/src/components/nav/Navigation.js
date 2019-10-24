@@ -191,7 +191,7 @@ class Navigation extends React.Component {
                   About Us
                 </Button>
               </Link>
-              <Link
+              {/* <Link
                 activeClass="active"
                 className="what"
                 to="what"
@@ -206,7 +206,7 @@ class Navigation extends React.Component {
                 >
                   intro
                 </Button>
-              </Link>
+              </Link> */}
               <Link
                 activeClass="active"
                 className="works"
